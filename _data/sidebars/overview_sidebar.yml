@@ -32,20 +32,17 @@ entries:
     - title: Development Assets
       url: /development_deliverables.html
       output: web
+    - title: API Foundations
+      url: /foundations.html
+      output: web
+    - title: FHIR&reg; Conformance Profile
+      url: /foundations_use_case_get_the_fhir_conformance_profile.html
+      output: web
+    - title: Search / Read V&M Chargeable-Status Indicator
+      url: /foundations_use_case_chargeable_status_indicator.html
+      output: web
 
       subfolders:
-      - title: FHIR&reg; API Requirements
-        output: web
-        subfolderitems:
-        - title: API Foundations
-          url: /foundations.html
-          output: web
-        - title: FHIR&reg; Conformance Profile
-          url: /foundations_use_case_get_the_fhir_conformance_profile.html
-          output: web
-        - title: Read V&M Chargeable-Status Indicator
-          url: /foundations_use_case_chargeable_status_indicator.html
-          output: web
       - title: FHIR&reg; API Guidance
         output: web
         subfolderitems:
@@ -58,9 +55,6 @@ entries:
           output: web
         - title: Security Guidance
           url: /development_api_security_guidance.html
-          output: web
-        - title: Error Handling
-          url: /development_fhir_error_handling_guidance.html
           output: web
         - title: Swagger API Documentation
           url: /development_swagger.html
