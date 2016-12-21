@@ -1,26 +1,53 @@
 ---
 title: Glossary
 keywords: abbreviations, definitions, glossaries, terms
-tags: [getting_started]
+tags: [overview]
 sidebar: overview_sidebar
 permalink: overview_glossary.html
-summary: "Glossary of terms"
+summary: "Glossary of terms used by Visitors & Migrants"
 toc: false
 ---
 
-Glossary of common terms and abbreviations used though-out the documentation.
+Glossary of common terms and abbreviations used though-out the Visitors & Migrants documentation.
 
-First of Type
-: {{site.data.glossary.first_of_type}}
+DoH
+: {{site.data.glossary.doh}}
 
-Consumer
-: {{site.data.glossary.consumer}}
+DSA
+: {{site.data.glossary.dsa}}
 
-Provider
-: {{site.data.glossary.provider}}
+EEA
+: {{site.data.glossary.eea}}
 
-Accreditation
-: {{site.data.glossary.accreditation}}
+EHIC
+: {{site.data.glossary.ehic}}
 
-Assurance
-: {{site.data.glossary.assurance}}
+HO
+: {{site.data.glossary.ho}}
+
+IHS
+: {{site.data.glossary.ihs}}
+
+NHSD
+: {{site.data.glossary.nhsd}}
+
+ODS
+: {{site.data.glossary.ods}}
+
+OVM
+: {{site.data.glossary.ovm}}
+
+PAS
+: {{site.data.glossary.pas}}
+
+PDS
+: {{site.data.glossary.pds}}
+
+SCRa
+: {{site.data.glossary.scra}}
+
+SDS
+: {{site.data.glossary.sds}}
+
+Spine
+: {{site.data.glossary.spine}}

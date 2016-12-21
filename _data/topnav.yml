@@ -7,13 +7,13 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: External Links
+    - title: V&M External Links
       folderitems:        
-        - title: External Link 1
-          external_url: http://www.google.com/
-        - title: External Link 2
-          external_url: http://www.yahoo.com/        
-    - title: Capability Packs
-      folderitems:
-        - title: Capability One
-          url: capability_one.html
+        - title: Spine
+          external_url: https://digital.nhs.uk/spine
+        - title: NHS Developer Network
+          external_url: http://developer.nhs.uk/library/interoperability/
+        - title: GPC Github API
+          external_url: https://github.com/nhsconnect/gpconnect-api/
+        - title: V&M Github Data Library
+          external_url: https://github.com/nhsconnect/visitors-and-migrants/fhir

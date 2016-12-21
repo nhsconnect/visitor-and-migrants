@@ -1,15 +1,8 @@
 allowed-tags:
-  - getting_started
+  - overview
   - news
-  - first_of_type
   - usecase
   - fhir
-  - structured
-  - foundations
-  - htmlgetcarerecord
-  - getcarerecord
-  - appointments
-  - tasks
   - engagement
   - design  
   - development
@@ -21,4 +14,3 @@ allowed-tags:
   - commissioning
   - clinical_safety
   - information_governance
-  - code_snippet

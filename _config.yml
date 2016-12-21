@@ -2,13 +2,13 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Site Title and Tag Line
+topnav_title: Visitors & Migrants FHIR&reg; API
 # this appears on the top navigation bar next to the home button
 
-site_title: Site Title
+site_title: Visitors & Migrants
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Company Name
+company_name: NHS Digital
 # this appears in the footer
 
 github_editme_path: /edit/master/
@@ -60,9 +60,7 @@ kramdown:
  auto_ids: true
  hard_wrap: false
  syntax_highlighter: rouge
-# filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
-
-collections:
+# filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways	
 
 defaults:
   -
@@ -89,7 +87,11 @@ defaults:
 
 sidebars:
 - overview_sidebar
-- capability_one_sidebar
+- overview_sidebar
+- designprinciples_sidebar
+- accessrecord_sidebar
+- appointments_sidebar
+- tasks_sidebar
 
 description: "Description of the site."
 # the description is used in the feed.xml file

@@ -1,89 +1,117 @@
 entries:
-- title: Product Title
-  product: Product Title<br/>
+- title: Visitors & Migrants
+  product: Visitors & Migrants<br/>
   version: 1.0.0-alpha.1
   levels: one
   folders:
 
-  - title: Get Started
+  - title: Overview
     output: web
     folderitems:
     - title: Introduction
       url: /index.html
       output: web, pdf
       type: homepage
-    - title: Workshops
-      url: /overview_workshops.html
-      output: web
     - title: Glossary
       url: /overview_glossary.html
       output: web
 
-  - title: Explore
+  - title: Design Approach
     output: web
     folderitems:
-    - title: Overview
-      url: /explore_overview.html
+    - title: Design Principles
+      url: /design_maturity_model.html
+      output: web
+    - title: Product Versioning
+      url: /design_product_versioning.html
       output: web
 
-  - title: Develop
+  - title: Development Guidance
     output: web
     folderitems:
-    - title: Overview
-      url: /develop_overview.html
+    - title: Development Assets
+      url: /development_deliverables.html
       output: web
 
-  - title: Capabilities
+      subfolders:
+      - title: FHIR&reg; API Requirements
+        output: web
+        subfolderitems:
+        - title: API Foundations
+          url: /foundations.html
+          output: web
+        - title: FHIR&reg; Conformance Profile
+          url: /foundations_use_case_get_the_fhir_conformance_profile.html
+          output: web
+        - title: Read V&M Chargeable-Status Indicator
+          url: /foundations_use_case_chargeable_status_indicator.html
+          output: web
+      - title: FHIR&reg; API Guidance
+        output: web
+        subfolderitems:
+
+        - title: Open Source
+          url: /development_fhir_open_source_guidance.html
+          output: web
+        - title: Common API Guidance
+          url: /development_fhir_api_guidance.html
+          output: web
+        - title: Security Guidance
+          url: /development_api_security_guidance.html
+          output: web
+        - title: Error Handling
+          url: /development_fhir_error_handling_guidance.html
+          output: web
+        - title: Swagger API Documentation
+          url: /development_swagger.html
+          output: web
+   
+  - title: Integrate With Spine
     output: web
     folderitems:
-    - title: Capability One
-      url: /capability_one.html
+    - title: System Topologies
+      url: /integration_system_topologies.html
+      output: web     
+    - title: Cross Org Audit & Provenance
+      url: /integration_cross_organisation_audit_and_provenance.html
       output: web
-
-  - title: Assure
+    - title: Personal Demographic Service
+      url: /integration_personal_demographic_service.html
+      output: web	
+    - title: Spine Directory Services
+      url: /integration_spine_directory_service.html
+      output: web
+    - title: Spine Security Proxy Introduction
+      url: /integration_spine_security_proxy.html
+      output: web
+    - title: Spine Security Proxy Implementation Guide
+      url: /integration_spine_security_proxy_implementation_guide.html
+      output: web
+ 
+  - title: Help & Support
     output: web
     folderitems:
-    - title: Overview
-      url: /assure_overview.html
-      output: web
-
-  - title: Deploy
-    output: web
-    folderitems:
-    - title: Overview
-      url: /deploy_overview.html
-      output: web
-
-  - title: Communications
-    output: web
-    folderitems:    
-    - title: Overview
-      url: /communications_overview.html
-      output: web
     - title: Frequently Asked Questions (FAQ)
-      url: /communications_faq.html
+      url: /support_faq.html
+      output: web
+    - title: Communication Channels
+      url: /support_communications.html
       output: web
 
   - title: Tags
     output: web
     folderitems:
+    - title: Introduction
+      url: /tag_overview.html
+      output: web
     - title: News
       url: /tag_news.html
-      output: web
-    - title: Getting Started
-      url: /tag_getting_started.html
-      output: web
-    - title: First of Type
-      url: /tag_first_of_type.html
       output: web
     - title: FHIR&reg;
       url: /tag_fhir.html
       output: web
     - title: Use Case
       url: /tag_use_case.html
-      output: web
-    - title: Engagement
-      url: /tag_engagement.html
       output: web
     - title: Design
       url: /tag_design.html
@@ -94,18 +122,6 @@ entries:
     - title: Integration
       url: /tag_integration.html
       output: web
-    - title: Testing
-      url: /tag_testing.html
-      output: web
-    - title: Assurance
-      url: /tag_assurance.html
-      output: web
-    - title: Deployment
-      url: /tag_deployment.html
-      output: web
-    - title: Support
-      url: /tag_support.html
-      output: web	  
     - title: Clinical Safety
       url: /tag_clinical_safety.html
       output: web
@@ -114,7 +130,4 @@ entries:
       output: web
     - title: Commissioning
       url: /tag_commissioning.html
-      output: web
-    - title: Code Snippet
-      url: /tag_code_snippet.html
       output: web
