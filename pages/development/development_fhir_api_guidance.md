@@ -4,12 +4,12 @@ keywords: fhir development
 tags: [fhir,development]
 sidebar: overview_sidebar
 permalink: development_fhir_api_guidance.html
-summary: "Details of the common request handling pattern(s) across the Visitors & Migrants FHIR API."
+summary: "Details of the common request handling pattern(s) across the Visitors and Migrants FHIR API."
 ---
 
 ## Purpose ##
 
-This document is intended for use by software developers looking to build a conformant Visitors & Migrants API interface utilising the FHIR&reg; standard.
+This document is intended for use by software developers looking to build a conformant Visitors and Migrants API interface utilising the FHIR&reg; standard.
 
 ### Notational Conventions ###
 
@@ -17,7 +17,7 @@ The keywords "**MUST**", "**MUST NOT**", "**REQUIRED**", "**SHALL**", "**SHALL N
 
 ## FHIR Implementation Guidance ##
 
-The purpose of the implementation guide is to describe adaptations of the base FHIR specification specific for Visitors & Migrants implementation. It therefore focuses mainly on any additional constraints and specialisations from the base specification that apply to Visitors & Migrants. The complete specification therefore comprises the base FHIR specification plus the constraints and specialisations described herein. Where there is a conflict between the base specification and this document, this document shall take precedence.
+The purpose of the implementation guide is to describe adaptations of the base FHIR specification specific for Visitors and Migrants implementation. It therefore focuses mainly on any additional constraints and specialisations from the base specification that apply to Visitors and Migrants. The complete specification therefore comprises the base FHIR specification plus the constraints and specialisations described herein. Where there is a conflict between the base specification and this document, this document shall take precedence.
 
 ### [FHIR Overview](http://hl7.org/fhir/overview-dev.html) ###
 

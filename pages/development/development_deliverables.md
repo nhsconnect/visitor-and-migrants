@@ -4,7 +4,7 @@ keywords: development deliverables
 tags: [development]
 sidebar: overview_sidebar
 permalink: development_deliverables.html
-summary: "Developer Cheat Sheet shortcuts for the <br/>technical build of Visitors & Migrants API."
+summary: "Developer Cheat Sheet shortcuts for the <br/>technical build of Visitors and Migrants API."
 ---
 
 ![stuff](images/overview/gpc blocks.png)

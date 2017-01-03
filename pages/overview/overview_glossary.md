@@ -4,11 +4,11 @@ keywords: abbreviations, definitions, glossaries, terms
 tags: [overview]
 sidebar: overview_sidebar
 permalink: overview_glossary.html
-summary: "Glossary of terms used by Visitors & Migrants"
+summary: "Glossary of terms used by Visitors and Migrants"
 toc: false
 ---
 
-Glossary of common terms and abbreviations used though-out the Visitors & Migrants documentation.
+Glossary of common terms and abbreviations used though-out the Visitors and Migrants documentation.
 
 DoH
 : {{site.data.glossary.doh}}

@@ -4,7 +4,7 @@ keywords: development
 tags: [design,development]
 sidebar: overview_sidebar
 permalink: design_clinical_terminologies.html
-summary: "Brief guidance on how clinical terminologies are expected to be used within Visitors & Migrants."
+summary: "Brief guidance on how clinical terminologies are expected to be used within Visitors and Migrants."
 ---
 
 ## UK Terminology Centre (UKTC) ## 

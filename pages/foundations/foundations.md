@@ -7,13 +7,13 @@ permalink: foundations.html
 summary: "All about the common foundation capabilities."
 ---
 
-[<i class="fa fa-arrow-left" aria-hidden="true"/> Back to Visitors & Migrants - Introduction.](index.html)
+[<i class="fa fa-arrow-left" aria-hidden="true"/> Back to Visitors and Migrants - Introduction.](index.html)
 
 ## Purpose ##
 
-The foundations capability cover the basic API requirements and prerequisites to utilise the Visitors & Migrants API.
+The foundations capability cover the basic API requirements and prerequisites to utilise the Visitors and Migrants API.
 
-{% include important.html content="In order to successfully make us of the Visitors & Migrants API, initially a level of pre-existing accredited Spine connectivity will be required along with some FHIR foundation API capabilities." %}
+{% include important.html content="In order to successfully make us of the Visitors and Migrants API, initially a level of pre-existing accredited Spine connectivity will be required along with some FHIR foundation API capabilities." %}
 
 {% include roadmap.html content="Over time the necessity to have access to pre-existing spine services (i.e. PDS and SDS integration) is likely to be replaced by FHIR based equivalents." %}
 
@@ -32,6 +32,6 @@ Please also refer to [Development Guidance - FHIR API Guidance - Common API Guid
 ### API Use Cases ###
 
 - [Get the FHIR conformance profile](foundations_use_case_get_the_fhir_conformance_profile.html)
-- [Read Visitors & Migrants Chargeable-Status Indicator](foundations_use_case_chargeable_status_indicator.html)
+- [Read Visitors and Migrants Chargeable-Status Indicator](foundations_use_case_chargeable_status_indicator.html)
 
 

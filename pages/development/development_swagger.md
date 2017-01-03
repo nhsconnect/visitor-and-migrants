@@ -4,7 +4,7 @@ keywords: development, swagger, api
 tags: [system,reference]
 sidebar: overview_sidebar
 permalink: development_swagger.html
-summary: "Machine readable technical API documentation of the Visitors & Migrants FHIR APIs."
+summary: "Machine readable technical API documentation of the Visitors and Migrants FHIR APIs."
 ---
 
 ## Swagger API Documentation ##

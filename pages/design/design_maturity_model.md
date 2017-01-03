@@ -7,7 +7,7 @@ permalink: design_maturity_model.html
 summary: High-level maturity model for the DoH Cost Recovery programme.
 ---
 
-[<i class="fa fa-arrow-left" aria-hidden="true"/> Back to Visitors & Migrants - Introduction.](index.html)
+[<i class="fa fa-arrow-left" aria-hidden="true"/> Back to Visitors and Migrants - Introduction.](index.html)
 
 {% include important.html content="All development phases outlined below are indicative and subject to on-going review." %}
 

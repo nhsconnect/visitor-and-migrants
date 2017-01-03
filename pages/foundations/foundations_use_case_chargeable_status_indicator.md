@@ -1,10 +1,10 @@
 ---
-title: Visitors & Migrants Chargeable-Status Indicator
+title: Visitors and Migrants Chargeable-Status Indicator
 keywords: nhsnumber, chargeable-status
 tags: [foundations,use_case]
 sidebar: foundations_sidebar
 permalink: foundations_use_case_chargeable_status_indicator.html
-summary: "Use case to search for and read an overseas visitors & migrants chargeable status indicator."
+summary: "Use case to search for and read an overseas Visitors and Migrants chargeable status indicator."
 ---
 
 ## Prerequisites ##
@@ -29,7 +29,7 @@ All Visitors and Migrants APIs should include the below additional HTTP request 
 
 ## Search for Chargeable-Status Indicator ##
 
-Search for a Visitors & Migrants Chargeable-Status Indicator `Observation` for a specified patient using a business identifier (i.e. the NHS Number).
+Search for a Visitors and Migrants Chargeable-Status Indicator `Observation` for a specified patient using a business identifier (i.e. the NHS Number).
 
 ```http
 GET [base]/Observation?subject:Patient.identifier=[system]|[value]&code=[system]|[code]
@@ -47,7 +47,7 @@ Success:
 - SHALL return a `200` **OK** HTTP status code on successful execution of the interaction.
 - SHALL return a `Bundle` of `type` searchset, containing either:
 	- One matching `Observation` resource that conforms to the `spine-vm-observation-1` profile; or
-	- One `OperationOutcome` resource if the interaction is a success, however no Overseas Visitors & Migrants record has been found.
+	- One `OperationOutcome` resource if the interaction is a success, however no Overseas Visitors and Migrants record has been found.
 - Where an Observation is returned, it SHALL include the `versionId` and `fullUrl` of the current version of the `observation` resource.
 
 
@@ -97,9 +97,9 @@ Bundle bundle = client.search().forResource(Patient.class)
 
 ## Read Chargeable-Status Indicator ##
 
-Read the latest Visitors & Migrants Chargeable-Status Indicator `Observation` with a specific [resource identifier](https://www.hl7.org/fhir/DSTU2/resource.html#id).
+Read the latest Visitors and Migrants Chargeable-Status Indicator `Observation` with a specific [resource identifier](https://www.hl7.org/fhir/DSTU2/resource.html#id).
 
-In cases where the client already has an identifier for the visitors & migrants chargeable status indicator Observation (for example from the results of a previous search), the Observation can be read directly using the ID:
+In cases where the client already has an identifier for the Visitors and Migrants chargeable status indicator Observation (for example from the results of a previous search), the Observation can be read directly using the ID:
 
 ```http
 GET /Observation/[id]

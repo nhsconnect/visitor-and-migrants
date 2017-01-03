@@ -1,18 +1,18 @@
 ---
-title: Introduction to Visitors & Migrants
+title: Introduction to Visitors and Migrants
 keywords: homepage
 tags: [overview]
 sidebar: overview_sidebar
 permalink: index.html
 toc: false
-summary: A brief introduction to getting started with the Visitors & Migrants FHIR&reg; API.
+summary: A brief introduction to getting started with the Visitors and Migrants FHIR&reg; API.
 ---
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the Visitors and Migrants API. Some areas are being formulated and iterative updates to content will be added on a regular basis." %}
 
 # Background #
 
-Visitors & Migrants aims to support the Department of Health (DoH) Cost Recovery program for secondary care treatment provided to patients that are not eligible to receive free NHS care.
+Visitors and Migrants aims to support the Department of Health (DoH) Cost Recovery program for secondary care treatment provided to patients that are not eligible to receive free NHS care.
 
 In 2013 a public consultation on the existing charging arrangements for overseas visitors and migrants was launched by the DoH. As a result of this consultation changes have been introduced to determine how overseas visitors and migrants are identified and charged for their healthcare.
 
@@ -24,7 +24,7 @@ An intrinsic requirement to support the measures detailed above is to provide an
 
 The DoH Cost Recovery programme consists of five development phases that are outlined as part of the high-level [maturity model](design_maturity_model.html). This site will primarily focus on Phase 3.
 
-# Visitors & Migrants Ecosystem #
+# Visitors and Migrants Ecosystem #
 
 This site is broadly structured around the API Journey outlined below:
 
