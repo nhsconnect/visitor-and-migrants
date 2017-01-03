@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-12-03T00:00:00+00:00"
+  },
+  "url": "http://fhir.nhs.net/ValueSet/fhir-observation-code-1",
+  "name": "FHIR Observation Code",
+  "status": "draft",
+  "description": "Codes identifying the type of observation.",
+  "codeSystem": {
+    "system": "http://fhir.nhs.net/fhir-observation-code-1",
+    "concept": [
+      {
+        "code": "0001",
+        "display": "Visitors and Migrants status observation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-12-03T00:00:00+00:00"
+  },
+  "url": "http://fhir.nhs.net/ValueSet/spine-chargeable-status-1",
+  "name": "Spine Chargeable Status",
+  "status": "draft",
+  "description": "Basic chargeable status for the patient.",
+  "codeSystem": {
+    "system": "http://fhir.nhs.net/spine-chargeable-status-1",
+    "concept": [
+      {
+        "code": "y",
+        "display": "Chargeable",
+        "definition": "The patient is likely chargeable for NHS Services"
+      },
+      {
+        "code": "n",
+        "display": "Not Chargeable",
+        "definition": "Paid or exempt from the health surcharge. "
+      },
+      {
+        "code": "u",
+        "display": "Unset",
+        "definition": "No specific information is available from the HO or an OVM to make a chargeable status determination"
+      }
+    ]
+  }
+}

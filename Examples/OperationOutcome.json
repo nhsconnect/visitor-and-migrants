@@ -1,0 +1,24 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "ff00d600-d1a6-11e6-9598-0800200c9a66",
+  "meta": {
+    "profile": [
+      "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "details": {
+        "coding": [
+          {
+            "system": " http://fhir.nhs.net/spine-error-or-warning-code-1",
+            "code": "VM-0002"
+          }
+        ]
+      },
+      "diagnostics": "Invalid NHS Number"
+    }
+  ]
+}
