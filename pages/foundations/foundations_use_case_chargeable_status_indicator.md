@@ -53,7 +53,87 @@ Success:
 
 ```json
 {
-	TO BE UPDATED
+"resourceType": "Bundle",
+  "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
+  "meta": {
+    "profile": [
+      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+    ]
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
+        "meta": {
+          "profile": [
+            "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.nhs.net/fhir-observation-code-1",
+              "code": "0001",
+              "display": "visitors and migrants status observation"
+            }]
+        },
+        "subject": {
+          "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
+          "display": "Miss Mary Taylor"
+        },
+        "effectiveDateTime": "2015-01-01T15:00:00",
+        "issued": "2015-02-01T15:00:00+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/0c5a34f0-d1ab-11e6-9598-0800200c9a66",
+            "display": "Mr Andrew Jones"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "code": "bcs",
+                  "display": "Basic Chargeable Status"
+                }]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-chargeable-status-1",
+                  "code": "y",
+                  "display": "Chargeable"
+                }]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "code": "ccs",
+                  "display": "Category Chargeable Status"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-category-status-1",
+                  "code": "F",
+                  "display": "F"
+                }]
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
@@ -64,7 +144,40 @@ Failure:
 
 ```json
 {
-	[ TO BE ADDED ]
+"resourceType": "Bundle",
+  "id": "67883730-d1a8-11e6-9598-0800200c9a66",
+  "meta": {
+    "profile": [
+      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+    ]
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "ff00d600-d1a6-11e6-9598-0800200c9a66",
+        "meta": {
+          "profile": [
+            "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
+          ]
+        },
+        "issue": [
+          {
+            "severity": "error",
+            "code": "invalid",
+            "details": {
+              "coding": [
+                {
+                  "system": " http://fhir.nhs.net/spine-error-or-warning-code-1",
+                  "code": "VM-0002"
+                }]
+            },
+            "diagnostics": "Invalid NHS Number"
+          }]
+      }
+    }
+  ]
 }
 ```
 
@@ -119,7 +232,86 @@ Success:
 
 ```json
 {
-	TO BE UPDATED
+"resourceType": "Bundle",
+  "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
+  "meta": {
+    "profile": [
+      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+    ]
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
+        "meta": {
+          "profile": [
+            "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.nhs.net/fhir-observation-code-1",
+              "code": "0001",
+              "display": "visitors and migrants status observation"
+            }]
+        },
+        "subject": {
+          "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
+          "display": "Miss Mary Taylor"
+        },
+        "effectiveDateTime": "2015-01-01T15:00:00",
+        "issued": "2015-02-01T15:00:00+00:00",
+        "performer": [
+          {
+            "reference": "Practitioner/0c5a34f0-d1ab-11e6-9598-0800200c9a66",
+            "display": "Mr Andrew Jones"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "code": "bcs",
+                  "display": "Basic Chargeable Status"
+                }]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-chargeable-status-1",
+                  "code": "y",
+                  "display": "Chargeable"
+                }]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "code": "ccs",
+                  "display": "Category Chargeable Status"
+                }]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-category-status-1",
+                  "code": "F",
+                  "display": "F"
+                }]
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
@@ -127,6 +319,45 @@ Failure:
 
 - SHALL return a `4xx` or `5xx` HTTP status code  with an `OperationOutcome` resource that conforms to the `spine-operationoutcome-1` profile containing details of the error that occurred.
 - The types of error in an `ObservationOutcome` are defined in the [Spine Error or Warning Code ValueSet](/ValueSets/spine-error-or-warning-code-1.xml)
+
+```json
+{
+"resourceType": "Bundle",
+  "id": "4534b230-d1c6-11e6-9598-0800200c9a66",
+  "meta": {
+    "profile": [
+      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+    ]
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "4e2c8890-d1c6-11e6-9598-0800200c9a66",
+        "meta": {
+          "profile": [
+            "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
+          ]
+        },
+        "issue": [
+          {
+            "severity": "error",
+            "code": "not-found",
+            "details": {
+              "coding": [
+                {
+                  "system": " http://fhir.nhs.net/spine-error-or-warning-code-1",
+                  "code": "VM-0001"
+                }]
+            },
+            "diagnostics": "No Record Found"
+          }]
+      }
+    }
+  ]
+}
+```
 
 ### Example Code ###
 
