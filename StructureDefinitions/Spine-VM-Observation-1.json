@@ -1520,6 +1520,9 @@
             "code": "Reference",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ],
+            "aggregation": [
+              "referenced"
             ]
           }
         ],
@@ -6900,6 +6903,9 @@
             "code": "Reference",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ],
+            "aggregation": [
+              "referenced"
             ]
           }
         ],

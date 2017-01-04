@@ -77,15 +77,15 @@ Success:
             {
               "system": "http://fhir.nhs.net/fhir-observation-code-1",
               "code": "0001",
-              "display": "visitors and migrants status observation"
+              "display": "Visitors and Migrants status observation"
             }]
         },
         "subject": {
           "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
           "display": "Miss Mary Taylor"
         },
-        "effectiveDateTime": "2015-01-01T15:00:00",
-        "issued": "2015-02-01T15:00:00+00:00",
+        "effectiveDateTime": "2015-01-01T15:00:00+00:00",
+        "issued": "2015-02-01T10:00:00+00:00",
         "performer": [
           {
             "reference": "Practitioner/0c5a34f0-d1ab-11e6-9598-0800200c9a66",
@@ -169,7 +169,7 @@ Failure:
             "details": {
               "coding": [
                 {
-                  "system": " http://fhir.nhs.net/spine-error-or-warning-code-1",
+                  "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
                   "code": "VM-0002"
                 }]
             },
@@ -256,15 +256,15 @@ Success:
             {
               "system": "http://fhir.nhs.net/fhir-observation-code-1",
               "code": "0001",
-              "display": "visitors and migrants status observation"
+              "display": "Visitors and Migrants status observation"
             }]
         },
         "subject": {
           "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
           "display": "Miss Mary Taylor"
         },
-        "effectiveDateTime": "2015-01-01T15:00:00",
-        "issued": "2015-02-01T15:00:00+00:00",
+        "effectiveDateTime": "2015-01-01T15:00:00+00:00",
+        "issued": "2015-02-01T10:00:00+00:00",
         "performer": [
           {
             "reference": "Practitioner/0c5a34f0-d1ab-11e6-9598-0800200c9a66",
@@ -279,7 +279,8 @@ Success:
                   "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
                   "code": "bcs",
                   "display": "Basic Chargeable Status"
-                }]
+                }
+              ]
             },
             "valueCodeableConcept": {
               "coding": [
@@ -347,7 +348,7 @@ Failure:
             "details": {
               "coding": [
                 {
-                  "system": " http://fhir.nhs.net/spine-error-or-warning-code-1",
+                  "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
                   "code": "VM-0001"
                 }]
             },
