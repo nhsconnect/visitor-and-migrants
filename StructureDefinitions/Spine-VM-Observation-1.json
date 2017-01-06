@@ -66,8 +66,8 @@
     "element": [
       {
         "path": "Observation",
-        "short": "Measurements and simple assertions",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
+        "short": "Visitors and Migrants chargeable status observation.",
+        "definition": "Visitors and Migrants chargeable status observation for the patient.",
         "comments": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -122,7 +122,7 @@
         "definition": "A unique identifier for the simple observation instance.",
         "requirements": "Allows observations to be distinguished and referenced.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.identifier",
           "min": 0,
@@ -1509,7 +1509,7 @@
         "definition": "Who was responsible for asserting the observed value as \"true\".",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.performer",
           "min": 0,
@@ -1520,9 +1520,6 @@
             "code": "Reference",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/Practitioner"
-            ],
-            "aggregation": [
-              "referenced"
             ]
           }
         ],
@@ -6191,8 +6188,8 @@
     "element": [
       {
         "path": "Observation",
-        "short": "Measurements and simple assertions",
-        "definition": "Measurements and simple assertions made about a patient, device or other subject.",
+        "short": "Visitors and Migrants chargeable status observation.",
+        "definition": "Visitors and Migrants chargeable status observation for the patient.",
         "comments": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -6238,6 +6235,38 @@
           {
             "identity": "w5",
             "map": "clinical.diagnostics"
+          }
+        ]
+      },
+      {
+        "path": "Observation.identifier",
+        "short": "Unique Id for this particular observation",
+        "definition": "A unique identifier for the simple observation instance.",
+        "requirements": "Allows observations to be distinguished and referenced.",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Observation.identifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX.21"
+          },
+          {
+            "identity": "rim",
+            "map": "id"
+          },
+          {
+            "identity": "w5",
+            "map": "id"
           }
         ]
       },
@@ -6892,7 +6921,7 @@
         "definition": "Who was responsible for asserting the observed value as \"true\".",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.performer",
           "min": 0,
@@ -6903,9 +6932,6 @@
             "code": "Reference",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/Practitioner"
-            ],
-            "aggregation": [
-              "referenced"
             ]
           }
         ],

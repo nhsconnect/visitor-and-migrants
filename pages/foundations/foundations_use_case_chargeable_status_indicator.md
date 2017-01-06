@@ -90,12 +90,6 @@ Success:
         },
         "effectiveDateTime": "2015-01-01T15:00:00+00:00",
         "issued": "2015-02-01T10:00:00+00:00",
-        "performer": [
-          {
-            "reference": "Practitioner/0c5a34f0-d1ab-11e6-9598-0800200c9a66",
-            "display": "Mr Andrew Jones"
-          }
-        ],
         "component": [
           {
             "code": {
@@ -269,12 +263,6 @@ Success:
         },
         "effectiveDateTime": "2015-01-01T15:00:00+00:00",
         "issued": "2015-02-01T10:00:00+00:00",
-        "performer": [
-          {
-            "reference": "Practitioner/0c5a34f0-d1ab-11e6-9598-0800200c9a66",
-            "display": "Mr Andrew Jones"
-          }
-        ],
         "component": [
           {
             "code": {
