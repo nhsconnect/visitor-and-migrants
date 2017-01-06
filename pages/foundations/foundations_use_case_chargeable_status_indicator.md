@@ -11,6 +11,8 @@ summary: "Use case to search for and read an overseas Visitors and Migrants char
 
 To use this API, the requester:
 
+- SHALL have gone through accreditation and received an endpoint certificate and associated ASID (Accredited System ID) for the client system.
+- SHALL have authenticated the user using national smartcard authentication, and obtained a ticket and the UUID from the user's smartcard (this is pass in a JSON web token - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details)
 - SHALL have previously traced the patient's NHS Number using PDS or an equivalent service.
 
 ## Request Headers ##
@@ -23,6 +25,8 @@ All Visitors and Migrants APIs should include the below additional HTTP request 
 | `Ssp-From`           | Client System ASID |
 | `Ssp-To`             | The Spine ASID |
 | `Ssp-InteractionID`  | `urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation`|
+
+This is in addition to the JSON web token required for audit - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details.
 
 [The above to be confirmed with the Spine team]
 
