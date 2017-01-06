@@ -19,7 +19,7 @@ entries:
   - title: Design Approach
     output: web
     folderitems:
-    - title: Design Principles
+    - title: Maturity Model
       url: /design_maturity_model.html
       output: web
     - title: Product Versioning
@@ -63,9 +63,6 @@ entries:
   - title: Integrate With Spine
     output: web
     folderitems:
-    - title: System Topologies
-      url: /integration_system_topologies.html
-      output: web     
     - title: Cross Org Audit & Provenance
       url: /integration_cross_organisation_audit_and_provenance.html
       output: web
@@ -74,12 +71,6 @@ entries:
       output: web	
     - title: Spine Directory Services
       url: /integration_spine_directory_service.html
-      output: web
-    - title: Spine Security Proxy Introduction
-      url: /integration_spine_security_proxy.html
-      output: web
-    - title: Spine Security Proxy Implementation Guide
-      url: /integration_spine_security_proxy_implementation_guide.html
       output: web
  
   - title: Help & Support
