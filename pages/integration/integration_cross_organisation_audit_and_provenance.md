@@ -15,19 +15,19 @@ Consumer systems SHALL provided audit and provenance details in the HTTP authori
 
 Consumer system SHALL generate a new JWT for each API request.
 
-| Claim | Priority | Description | Fixed Value | Dynamic Value |
-|-------|----------|-------------|-------------|------------------|
-| iss | R | Client systems issuer URI | No | Yes |
-| sub | R | ID for the user on whose behalf this request is being made. Matches `requesting_practitioner.id` | No | Yes |
-| aud | R | Authorization server's `token_URL` | `https://authorize.fhir.nhs.net/token` | No |
-| exp | R | Expiration time integer after which this authorization MUST be considered invalid. | `exp` | (now + 5 minutes) UTC time in seconds |
-| iat | R | The UTC time the JWT was created by the requesting system | `iat` | now UTC time in seconds |
-| reason_for_request | R | Purpose for which access is being requested | `directcare` | No |
-| requested_record | R | The FHIR patient resource being requested (i.e. NHS Number identifier details) | No | FHIR Patient<sup>1</sup> |
-| requested_scopes | R | Data being requested | `patient/Observation.read` | No |
-| requesting_device | R | FHIR device resource making the request | No | FHIR Device<sup>1</sup> |
-| requesting_organization | R | FHIR organisation resource making the request | No | FHIR Organization<sup>1</sup> | 
-| requesting_practitioner | R | FHIR practitioner resource making the request | No | FHIR Practitioner<sup>2</sup> |
+| Claim | Priority | Description | Fixed Value | Dynamic Value | Specification / Example |
+|-------|----------|-------------|-------------|---------------|-------------------------|
+| iss | R | Client systems issuer URI | No | Yes | |
+| sub | R | ID for the user on whose behalf this request is being made. Matches `requesting_practitioner.identifier.value` | No | Yes | |
+| aud | R | Authorization server's `token_URL` | `https://authorize.fhir.nhs.net/token` | No | |
+| exp | R | Expiration time integer after which this authorization MUST be considered invalid. | `exp` | (now + 5 minutes) UTC time in seconds | |
+| iat | R | The UTC time the JWT was created by the requesting system | `iat` | now UTC time in seconds | |
+| reason_for_request | R | Purpose for which access is being requested | `directcare` | No | |
+| requested_record | R | The FHIR patient resource being requested (i.e. NHS Number identifier details) | No | FHIR Patient<sup>1</sup> | [Audit-Patient-1](Audit/StructureDefinitions/Audit-Patient-1.json) [(Example)](Audit/Examples/Patient.json) |
+| requested_scopes | R | Data being requested | `patient/Observation.read` | No | |
+| requesting_device | R | FHIR device resource making the request | No | FHIR Device<sup>1</sup> | [Audit-Device-1](Audit/StructureDefinitions/Audit-Device-1.json) [(Example)](Audit/Examples/Device.json) |
+| requesting_organization | R | FHIR organisation resource making the request | No | FHIR Organization<sup>1</sup> | [Audit-Organization-1](Audit/StructureDefinitions/Audit-Organization-1.json) [(Example)](Audit/Examples/Organization.json) |
+| requesting_practitioner | R | FHIR practitioner resource making the request | No | FHIR Practitioner<sup>2</sup> | [Audit-Practitioner-1](Audit/StructureDefinitions/Audit-Practitioner-1.json) [(Example)](Audit/Examples/Practitioner.json) |
 
 <sup>1</sup> Minimal FHIR resource to include any relevant business identifier(s).
 

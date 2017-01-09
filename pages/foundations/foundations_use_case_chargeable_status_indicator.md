@@ -230,79 +230,65 @@ Success:
 
 ```json
 {
-"resourceType": "Bundle",
-  "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
+  "resourceType": "Observation",
+  "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
   "meta": {
     "profile": [
-      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+    "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
     ]
   },
-  "type": "searchset",
-  "entry": [
+  "status": "final",
+  "code": {
+    "coding": [
     {
-      "resource": {
-        "resourceType": "Observation",
-        "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
-        "meta": {
-          "profile": [
-            "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
-          ]
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "system": "http://fhir.nhs.net/fhir-observation-code-1",
-              "code": "0001",
-              "display": "Visitors and Migrants status observation"
-            }]
-        },
-        "subject": {
-          "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
-          "display": "Miss Mary Taylor"
-        },
-        "effectiveDateTime": "2015-01-01T15:00:00+00:00",
-        "issued": "2015-02-01T10:00:00+00:00",
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
-                  "code": "bcs",
-                  "display": "Basic Chargeable Status"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://fhir.nhs.net/spine-chargeable-status-1",
-                  "code": "y",
-                  "display": "Chargeable"
-                }]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
-                  "code": "ccs",
-                  "display": "Category Chargeable Status"
-                }]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://fhir.nhs.net/spine-category-status-1",
-                  "code": "F",
-                  "display": "F"
-                }]
-            }
-          }
-        ]
+      "system": "http://fhir.nhs.net/fhir-observation-code-1",
+      "code": "0001",
+      "display": "Visitors and Migrants status observation"
+    }]
+  },
+  "subject": {
+    "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
+    "display": "Miss Mary Taylor"
+  },
+  "effectiveDateTime": "2015-01-01T15:00:00+00:00",
+  "issued": "2015-02-01T10:00:00+00:00",
+  "component": [
+    {
+    "code": {
+      "coding": [
+      {
+        "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+        "code": "bcs",
+        "display": "Basic Chargeable Status"
       }
+      ]
+    },
+    "valueCodeableConcept": {
+      "coding": [
+      {
+        "system": "http://fhir.nhs.net/spine-chargeable-status-1",
+        "code": "y",
+        "display": "Chargeable"
+      }]
+    }
+    },
+    {
+    "code": {
+      "coding": [
+      {
+        "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+        "code": "ccs",
+        "display": "Category Chargeable Status"
+      }]
+    },
+    "valueCodeableConcept": {
+      "coding": [
+      {
+        "system": "http://fhir.nhs.net/spine-category-status-1",
+        "code": "F",
+        "display": "F"
+      }]
+    }
     }
   ]
 }
@@ -315,40 +301,26 @@ Failure:
 
 ```json
 {
-"resourceType": "Bundle",
-  "id": "4534b230-d1c6-11e6-9598-0800200c9a66",
+  "resourceType": "OperationOutcome",
+  "id": "4e2c8890-d1c6-11e6-9598-0800200c9a66",
   "meta": {
     "profile": [
-      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+      "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
     ]
   },
-  "type": "searchset",
-  "entry": [
+  "issue": [
     {
-      "resource": {
-        "resourceType": "OperationOutcome",
-        "id": "4e2c8890-d1c6-11e6-9598-0800200c9a66",
-        "meta": {
-          "profile": [
-            "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
-          ]
-        },
-        "issue": [
-          {
-            "severity": "error",
-            "code": "not-found",
-            "details": {
-              "coding": [
-                {
-                  "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
-                  "code": "VM-0001"
-                }]
-            },
-            "diagnostics": "No Record Found"
-          }]
-      }
-    }
-  ]
+      "severity": "error",
+      "code": "not-found",
+      "details": {
+        "coding": [
+    {
+      "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
+      "code": "VM-0001"
+    }]
+      },
+      "diagnostics": "No Record Found"
+    }]
 }
 ```
 

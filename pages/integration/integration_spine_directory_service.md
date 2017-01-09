@@ -4,14 +4,14 @@ keywords: spine, sds, integration, patient, demographics
 tags: [integration]
 sidebar: overview_sidebar
 permalink: integration_spine_directory_service.html
-summary: "Overview of the role of the Spine Directory Services (SDS) within GP Connect."
+summary: "Overview of the role of the Spine Directory Services (SDS) for Visitors and Migrants."
 ---
 
-{% include warning.html content="This page is a preliminary working draft and hence is subject to change." %}
+{% include warning.html content="We need to confirm with the Spine team the expectations for clients - do they need to query SDS to get the Spine's ASID or can they use a fixed value? If they need to look it up, can they cache it, and for how long?" %}
 
 ## Spine Directory Service (SDS) ##
 
-GP Connect Consumer systems are expected to resolve the FHIR endpoint for a given GP Provider organisation using the [Spine Directory Service (SDS)](http://systems.digital.nhs.uk/ddc/spine-directory-service){:target="_blank"} LDAP:
+Consumer systems are expected to resolve the FHIR endpoint for the Spine using the [Spine Directory Service (SDS)](http://systems.digital.nhs.uk/ddc/spine-directory-service){:target="_blank"} LDAP:
 
 This is a two step process, as follows:
 
@@ -20,18 +20,16 @@ This is a two step process, as follows:
 
 Once the MHS record has been retrieved the fully qualified domain name (FQDN) of the FHIR server can be extracted.
 
-{% include roadmap.html content="NHS Digital is considering the delivery of a simplified FHIR façade over the Spine Directory Service (SDS) to allow FHIR endpoint resolution to be achieved in a more streamlined (and FHIR compatible) way." %}
-
 ### Accredited System ID (ASID) Lookup ###
 
-Using an organisation ODS code client's SHALL lookup the Accredited System ID (ASID) as follows:
+Using the NHS Digital ODS code client's SHALL lookup the Accredited System ID (ASID) as follows:
 
 - Accredited System type
 	- objectClass = `nhsAs`
 - Organisational code
-	- nhsIDCode = *[odsCode]* of the GP organisation.
+	- nhsIDCode = The NHS Digital ODS Code. [TODO: Show the real value for our ODS code]
 - Interaction ID
-	- nhsAsSvcIA = *[interactionId]* of the GP Connect API operation required.
+	- nhsAsSvcIA = *[interactionId]* of the Visitors and Migrants operation required (either urn:nhs:names:services:visitorsandmigrants:fhir:rest:read:metadata or urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation).
 
 ```bash
 ldapsearch -h ldap.spine.nhs.uk –b "ou=services, o=nhs" 
