@@ -2,17 +2,6 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "3"
-      },
-      {
-        "system": "urn:hscic:examples",
-        "code": "Organization",
-        "display": "Organization Example"
-      }
-    ]
   },
   "url": "http://fhir.nhs.net/StructureDefinition/audit-organization-1",
   "version": "1.0",
