@@ -93,7 +93,7 @@ The security of the endpoints of the TLS communications must be risk-managed, so
 
 The FHIR&reg; standard specifies that users/clients/servers may be authenticated in any way desired. However, for web-centric use, oAuth ([RFC 6749](http://tools.ietf.org/html/rfc6749)) is recommended but not mandated by the FHIR&reg; standard.
 
-For the purpose of GP Connect FoT clients and servers SHALL authenticate using TLS Mutual Authentication (MA) utilising client certificates provided by the NHS Digital for this purpose.
+For the purpose of Visitors and Migrants clients and servers SHALL authenticate using TLS Mutual Authentication (MA) utilising client certificates provided by the NHS Digital for this purpose.
 
 ### [System Conformance](https://www.hl7.org/fhir/DSTU2/conformance.html) ###
 
@@ -105,7 +105,7 @@ A servers conformance statement SHALL be available using the following [conforma
 GET [base]/metadata {?_format=[mime-type]}
 ```
 
-Refer to [Foundations - Get The FHIR Conformance Profile](foundations_use_case_get_the_fhir_conformance_profile.html) for an example GP Connect FHIR conformance profile.
+Refer to [Foundations - Get The FHIR Conformance Profile](foundations_use_case_get_the_fhir_conformance_profile.html) for an example Visitors and Migrants FHIR conformance profile.
 
 {% include roadmap.html content="NHS Digital is evaluating the benefits of providing a centrally hosted FHIR server to act as a definition repository for *Content* and *Operation Control* [Infrastructure Resources](https://www.hl7.org/fhir/DSTU2/infrastructure.html). However, this is out of scope for the initial GP Connect deployments." %}
 
