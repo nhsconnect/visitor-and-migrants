@@ -104,15 +104,3 @@ entries:
     - title: Development
       url: /tag_development.html
       output: web
-    - title: Integration
-      url: /tag_integration.html
-      output: web
-    - title: Clinical Safety
-      url: /tag_clinical_safety.html
-      output: web
-    - title: Information Governance
-      url: /tag_information_governance.html
-      output: web
-    - title: Commissioning
-      url: /tag_commissioning.html
-      output: web
