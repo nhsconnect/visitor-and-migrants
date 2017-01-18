@@ -89,9 +89,6 @@ entries:
     - title: Introduction
       url: /tag_overview.html
       output: web
-    - title: News
-      url: /tag_news.html
-      output: web
     - title: FHIR&reg;
       url: /tag_fhir.html
       output: web

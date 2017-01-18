@@ -16,8 +16,6 @@ For general enquires please send an email to the [Visitors and Migrants Inbox](A
 
 > A one-way externally facing communications channel that is used to announce various news and events.
 
-For all the latest news/announcements please subscribe to our [News](news.html) feed.
-
 ## Issues
 
 > A system used so that clients can report errors and ommisions in the documentation, and to help keep track of the progress of resolving these.

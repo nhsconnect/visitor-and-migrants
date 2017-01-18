@@ -10,7 +10,7 @@ summary: "Frequently Asked Questions (FAQ)."
 
 #### Why are you not using the latest version of FHIR (DSTU3)? ####
 
-As DSTU3 hasn’t yet been balloted the current version of FHIR is still DSTU2 and will be until later this year or early next year. Grahame Grieve has recently posted an update on his [OnFHIR blog](https://onfhir.hl7.org) around the next version of FHIR being a STU3 release with a tentative target release date of December 31st 2016.
+As DSTU3 hasn’t yet been balloted the current version of FHIR is still DSTU2 and will be until later this year. Grahame Grieve has recently posted an update on his [OnFHIR blog](https://onfhir.hl7.org) around the next version of FHIR being a STU3 release with a tentative target release date of March 31st 2017.
 
 As outlined in the [FHIR Timelines](development_fhir_api_guidance.html#fhir-timelineshttphl7orgfhirtimelineshtml) section uplifting to newer versions of the FHIR standard is expected (in the sense that in principle it shouldn’t come as a surprise to anyone, as we’re utilising what is currently still a draft standard after all). The mechanism and timing of uplifts will be agreed by the Visitors and Migrants Programme.
 

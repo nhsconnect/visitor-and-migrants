@@ -1,9 +1,3 @@
-topnav:
-- title: Topnav
-  items:
-    - title: News
-      url: news.html
-
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
@@ -13,7 +7,5 @@ topnav_dropdowns:
           external_url: https://digital.nhs.uk/spine
         - title: NHS Developer Network
           external_url: http://developer.nhs.uk/library/interoperability/
-        - title: GPC Github API
-          external_url: https://github.com/nhsconnect/gpconnect-api/
         - title: V&M Github Data Library
           external_url: https://github.com/nhsconnect/visitors-and-migrants/fhir
