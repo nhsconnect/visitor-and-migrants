@@ -4,7 +4,7 @@ keywords: spine, ssp, integration, audit, provenance
 tags: [integration]
 sidebar: overview_sidebar
 permalink: integration_cross_organisation_audit_and_provenance.html
-summary: "Overview of how audit and provenance data is expected to be transported over the GP Connect FHIR interfaces."
+summary: "Overview of how audit and provenance data is expected to be transported over the Visitors and Migrants FHIR interfaces."
 ---
 
 ## Cross Organisation Audit & Provenance ##
@@ -23,11 +23,11 @@ Consumer system SHALL generate a new JWT for each API request.
 | exp | R | Expiration time integer after which this authorization MUST be considered invalid. | `exp` | (now + 5 minutes) UTC time in seconds | |
 | iat | R | The UTC time the JWT was created by the requesting system | `iat` | now UTC time in seconds | |
 | reason_for_request | R | Purpose for which access is being requested | `directcare` | No | |
-| requested_record | R | The FHIR patient resource being requested (i.e. NHS Number identifier details) | No | FHIR Patient<sup>1</sup> | [Audit-Patient-1](Audit/StructureDefinitions/Audit-Patient-1.json) [(Example)](Audit/Examples/Patient.json) |
+| requested_record | R | The FHIR patient resource being requested (i.e. NHS Number identifier details) | No | FHIR Patient<sup>1</sup> | [Audit-Patient-1](Audit/StructureDefinitions/audit-patient-1.json) [(Example)](Audit/Examples/Patient.json) |
 | requested_scopes | R | Data being requested | `patient/Observation.read` | No | |
-| requesting_device | R | FHIR device resource making the request | No | FHIR Device<sup>1</sup> | [Audit-Device-1](Audit/StructureDefinitions/Audit-Device-1.json) [(Example)](Audit/Examples/Device.json) |
-| requesting_organization | R | FHIR organisation resource making the request | No | FHIR Organization<sup>1</sup> | [Audit-Organization-1](Audit/StructureDefinitions/Audit-Organization-1.json) [(Example)](Audit/Examples/Organization.json) |
-| requesting_practitioner | R | FHIR practitioner resource making the request | No | FHIR Practitioner<sup>2</sup> | [Audit-Practitioner-1](Audit/StructureDefinitions/Audit-Practitioner-1.json) [(Example)](Audit/Examples/Practitioner.json) |
+| requesting_device | R | FHIR device resource making the request | No | FHIR Device<sup>1</sup> | [Audit-Device-1](Audit/StructureDefinitions/audit-device-1.json) [(Example)](Audit/Examples/Device.json) |
+| requesting_organization | R | FHIR organisation resource making the request | No | FHIR Organization<sup>1</sup> | [Audit-Organization-1](Audit/StructureDefinitions/audit-organization-1.json) [(Example)](Audit/Examples/Organization.json) |
+| requesting_practitioner | R | FHIR practitioner resource making the request | No | FHIR Practitioner<sup>2</sup> | [Audit-Practitioner-1](Audit/StructureDefinitions/audit-practitioner-1.json) [(Example - smartcard)](Audit/Examples/Practitioner1a.json) <br /> [(Example - non-smartcard)](Audit/Examples/Practitioner1b.json)|
 
 <sup>1</sup> Minimal FHIR resource to include any relevant business identifier(s).
 

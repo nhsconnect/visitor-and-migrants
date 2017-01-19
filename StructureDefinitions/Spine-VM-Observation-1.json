@@ -2,18 +2,13 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2015-09-22T11:02:49.724+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:examples",
-        "code": "Observation",
-        "display": "Observation example - Visitors and Migrants Status"
-      },
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "3"
-      }
-    ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 4
+    }
+  ],
   "url": "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1",
   "name": "Spine-VM-Observation-1",
   "display": "Spine-VM-Observation-1",

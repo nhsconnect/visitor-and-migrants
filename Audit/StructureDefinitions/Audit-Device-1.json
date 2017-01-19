@@ -2,24 +2,7 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "4"
-      },
-      {
-        "system": "urn:hscic:examples",
-        "code": "Device",
-        "display": "Device"
-      }
-    ]
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 0
-    }
-  ],
   "url": "http://fhir.nhs.net/StructureDefinition/audit-device-1",
   "version": "1.0",
   "name": "Audit-Device-1",

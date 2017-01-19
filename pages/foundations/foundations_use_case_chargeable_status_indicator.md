@@ -36,11 +36,10 @@ This is in addition to the JSON web token required for audit - see [Cross Organi
 Search for a Visitors and Migrants Chargeable-Status Indicator `Observation` for a specified patient using a business identifier (i.e. the NHS Number).
 
 ```http
-GET [base]/Observation?subject:Patient.identifier=[system]|[value]&code=[system]|[code]
+GET [base]/Observation?subject:Patient.identifier=[system]|[value]
 ```
 
 - The `[system]` field for the Paient Itentifier SHALL be populated with the identifier system URL: `http://fhir.nhs.net/Id/nhs-number`.
-- The `[system]` field for the Code SHALL be populated with the identifier system URL: `http://fhir.nhs.net/fhir-observation-code-1`.
 - The `[base]` is the URL of the Spine endpoint [TO BE CONFIRMED].
 - Note: The mime-type can be specified to request either XML or JSON using another URL parameter `?_format=[mime-type]`, or a `Content-Type` HTTP header as per the [FHIR specification](https://www.hl7.org/fhir/http.html#mime-type).
 

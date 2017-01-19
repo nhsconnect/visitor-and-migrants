@@ -89,9 +89,6 @@ entries:
     - title: Introduction
       url: /tag_overview.html
       output: web
-    - title: News
-      url: /tag_news.html
-      output: web
     - title: FHIR&reg;
       url: /tag_fhir.html
       output: web
@@ -103,16 +100,4 @@ entries:
       output: web	  
     - title: Development
       url: /tag_development.html
-      output: web
-    - title: Integration
-      url: /tag_integration.html
-      output: web
-    - title: Clinical Safety
-      url: /tag_clinical_safety.html
-      output: web
-    - title: Information Governance
-      url: /tag_information_governance.html
-      output: web
-    - title: Commissioning
-      url: /tag_commissioning.html
       output: web

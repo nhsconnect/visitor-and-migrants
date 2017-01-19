@@ -2,17 +2,6 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:examples",
-        "code": "OperationOutcome",
-        "display": "Spine-OperationOutcome-1 (Invalid NHS Number) Example"
-      },
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "2"
-      }
-    ]
   },
   "url": "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1",
   "version": "1.0.0",

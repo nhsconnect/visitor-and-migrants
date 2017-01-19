@@ -2,17 +2,6 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:examples",
-        "code": "Patient",
-        "display": "NHS Patient example"
-      },
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "1"
-      }
-    ]
   },
   "url": "http://fhir.nhs.net/StructureDefinition/audit-patient-1",
   "version": "1.0",

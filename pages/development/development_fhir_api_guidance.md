@@ -31,7 +31,7 @@ As outlined on the official [HL7&reg; FHIR](http://hl7.org/fhir/) website:
 
 FHIR is currently a draft standard and as such is expected to evolve and develop over time. As such the NHS Digital expects FHIR clients and servers  to be maintained and uplifted to newer versions of the FHIR&reg; standard as they become available.
 
-A pre-release version of FHIR (expected to be the basis of STU3) has been published as the [May 2016](http://hl7.org/fhir/2016May/) release. The FHIR community is expecting the finalised STU3 release to be made available in late 2016/early 2017.
+A pre-release version of FHIR (expected to be the basis of STU3) has been published as the [May 2016](http://hl7.org/fhir/2016May/) release. The FHIR community is expecting the finalised STU3 release to be made available around March 2017.
 
 When a new release of the FHIR standard has been published for use NHS Digital to determine the impact of transitioning to the new FHIR release. Following this assessment, the FHIR Resource library will be updated to include resources using this new release. NHS Digital will work with implementers throughout this transition phase and are expected to maintain both versions of the FHIR release until it has been agreed that the old version can be deprecated.
 
@@ -93,7 +93,7 @@ The security of the endpoints of the TLS communications must be risk-managed, so
 
 The FHIR&reg; standard specifies that users/clients/servers may be authenticated in any way desired. However, for web-centric use, oAuth ([RFC 6749](http://tools.ietf.org/html/rfc6749)) is recommended but not mandated by the FHIR&reg; standard.
 
-For the purpose of GP Connect FoT clients and servers SHALL authenticate using TLS Mutual Authentication (MA) utilising client certificates provided by the NHS Digital for this purpose.
+For the purpose of Visitors and Migrants clients and servers SHALL authenticate using TLS Mutual Authentication (MA) utilising client certificates provided by the NHS Digital for this purpose.
 
 ### [System Conformance](https://www.hl7.org/fhir/DSTU2/conformance.html) ###
 
@@ -105,7 +105,7 @@ A servers conformance statement SHALL be available using the following [conforma
 GET [base]/metadata {?_format=[mime-type]}
 ```
 
-Refer to [Foundations - Get The FHIR Conformance Profile](foundations_use_case_get_the_fhir_conformance_profile.html) for an example GP Connect FHIR conformance profile.
+Refer to [Foundations - Get The FHIR Conformance Profile](foundations_use_case_get_the_fhir_conformance_profile.html) for an example Visitors and Migrants FHIR conformance profile.
 
 {% include roadmap.html content="NHS Digital is evaluating the benefits of providing a centrally hosted FHIR server to act as a definition repository for *Content* and *Operation Control* [Infrastructure Resources](https://www.hl7.org/fhir/DSTU2/infrastructure.html). However, this is out of scope for the initial GP Connect deployments." %}
 
