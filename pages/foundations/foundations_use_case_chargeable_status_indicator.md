@@ -25,8 +25,7 @@ All Visitors and Migrants APIs should include the below additional HTTP request 
 | `Ssp-From`           | Client System ASID |
 | `Ssp-To`             | The Spine ASID |
 | `Ssp-InteractionID`  | `urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation`|
-
-This is in addition to the JSON web token required for audit - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details.
+| `Authorization`      | This will carry the base64 encoded JSON web token required for audit - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details. |
 
 [The above to be confirmed with the Spine team]
 
@@ -183,9 +182,9 @@ Failure:
 #### C# ####
 
 ```csharp
-var client = new FhirClient("http://gpconnect.fhir.nhs.net/fhir/");
+var client = new FhirClient("http://spine-base-url/fhir-base/");
 client.PreferredFormat = ResourceFormat.Json;
-var query = new string[] { "identifier=http://fhir.nhs.net/Id/nhs-number|P002" };
+var query = new string[] { "identifier=http://fhir.nhs.net/Id/nhs-number|9000000041" };
 var bundle = client.Search("Patient", query);
 FhirSerializer.SerializeResourceToXml(bundle).Dump();
 ```
@@ -194,161 +193,14 @@ FhirSerializer.SerializeResourceToXml(bundle).Dump();
 
 ```java
 FhirContext ctx = new FhirContext();
-IGenericClient client = ctx.newRestfulGenericClient("http://gpconnect.fhir.nhs.net/fhir/");
-Bundle bundle = client.search().forResource(Patient.class)
-.where(new TokenClientParam("identifier").exactly().systemAndCode("http://fhir.nhs.net/Id/nhs-number", "P002"))
+IGenericClient client = ctx.newRestfulGenericClient("http://spine-base-url/fhir-base/");
+Bundle bundle = client.search().forResource(Observation.class)
+.where(new TokenClientParam("identifier").exactly().systemAndCode("http://fhir.nhs.net/Id/nhs-number", "9000000041"))
 .encodedXml()
 .execute();
 ```
 
 #### cURL ####
 
-{% include embedcurl.html title="Find a patient" command="curl -X GET -H 'Ssp-From: 0001' -H 'Ssp-To: 0002' -H 'Ssp-InteractionID: urn:nhs:names:services:gpconnect:fhir:rest:search:patient' -H 'Cache-Control: no-cache' -H 'Ssp-TraceID: e623b4de-f6bb-be0c-956d-c4ded0d58fc0' 'http://gpconnect.fhir.nhs.net/fhir/Patient?identifier=http://fhir.nhs.net/Id/nhs-number%7CP002'" %}
-
-## Read Chargeable-Status Indicator ##
-
-Read the latest Visitors and Migrants Chargeable-Status Indicator `Observation` with a specific [resource identifier](https://www.hl7.org/fhir/DSTU2/resource.html#id).
-
-In cases where the client already has an identifier for the Visitors and Migrants chargeable status indicator Observation (for example from the results of a previous search), the Observation can be read directly using the ID:
-
-```http
-GET /Observation/[id]
-```
-
-- The `[id]` is the [identifier](https://www.hl7.org/fhir/DSTU2/resource.html#id) of the FHIR Observation resource.
-- The `[base]` is the URL of the Spine endpoint [TO BE CONFIRMED].
-- Note: The mime-type can be specified to request either XML or JSON using another URL parameter `?_format=[mime-type]`, or a `Content-Type` HTTP header as per the [FHIR specification](https://www.hl7.org/fhir/http.html#mime-type).
-
-### Read Response ###
-
-Success:
-
-- SHALL return a `200` **OK** HTTP status code on successful execution of the interaction.
-- SHALL return one `Observation` resource that conforms to the `spine-vm-observation-1` profile.
-- SHALL include the `versionId` and `fullUrl` of the current version of the `observation` resource.
-
-```json
-{
-  "resourceType": "Observation",
-  "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
-  "meta": {
-    "profile": [
-    "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
-    ]
-  },
-  "status": "final",
-  "code": {
-    "coding": [
-    {
-      "system": "http://fhir.nhs.net/fhir-observation-code-1",
-      "code": "0001",
-      "display": "Visitors and Migrants status observation"
-    }]
-  },
-  "subject": {
-    "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
-    "display": "Miss Mary Taylor"
-  },
-  "effectiveDateTime": "2015-01-01T15:00:00+00:00",
-  "issued": "2015-02-01T10:00:00+00:00",
-  "component": [
-    {
-    "code": {
-      "coding": [
-      {
-        "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
-        "code": "bcs",
-        "display": "Basic Chargeable Status"
-      }
-      ]
-    },
-    "valueCodeableConcept": {
-      "coding": [
-      {
-        "system": "http://fhir.nhs.net/spine-chargeable-status-1",
-        "code": "y",
-        "display": "Chargeable"
-      }]
-    }
-    },
-    {
-    "code": {
-      "coding": [
-      {
-        "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
-        "code": "ccs",
-        "display": "Category Chargeable Status"
-      }]
-    },
-    "valueCodeableConcept": {
-      "coding": [
-      {
-        "system": "http://fhir.nhs.net/spine-category-status-1",
-        "code": "F",
-        "display": "F"
-      }]
-    }
-    }
-  ]
-}
-```
-
-Failure: 
-
-- SHALL return a `4xx` or `5xx` HTTP status code  with an `OperationOutcome` resource that conforms to the `spine-operationoutcome-1` profile containing details of the error that occurred.
-- The types of error in an `ObservationOutcome` are defined in the [Spine Error or Warning Code ValueSet](/ValueSets/spine-error-or-warning-code-1.xml)
-
-```json
-{
-  "resourceType": "OperationOutcome",
-  "id": "4e2c8890-d1c6-11e6-9598-0800200c9a66",
-  "meta": {
-    "profile": [
-      "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
-    ]
-  },
-  "issue": [
-    {
-      "severity": "error",
-      "code": "not-found",
-      "details": {
-        "coding": [
-    {
-      "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
-      "code": "VM-0001"
-    }]
-      },
-      "diagnostics": "No Record Found"
-    }]
-}
-```
-
-### Example Code ###
-
-#### C# ####
-
-```csharp
-var client = new FhirClient("http://gpconnect.fhir.nhs.net/fhir/");
-client.PreferredFormat = ResourceFormat.Json;
-var query = new string[] { "identifier=http://fhir.nhs.net/Id/nhs-number|P002" };
-var bundle = client.Search("Patient", query);
-FhirSerializer.SerializeResourceToXml(bundle).Dump();
-```
-
-#### Java ####
-
-```java
-FhirContext ctx = new FhirContext();
-IGenericClient client = ctx.newRestfulGenericClient("http://gpconnect.fhir.nhs.net/fhir/");
-Bundle bundle = client.search().forResource(Patient.class)
-.where(new TokenClientParam("identifier").exactly().systemAndCode("http://fhir.nhs.net/Id/nhs-number", "P002"))
-.encodedXml()
-.execute();
-```
-
-#### cURL ####
-
-{% include embedcurl.html title="Find a patient" command="curl -X GET -H 'Ssp-From: 0001' -H 'Ssp-To: 0002' -H 'Ssp-InteractionID: urn:nhs:names:services:gpconnect:fhir:rest:search:patient' -H 'Cache-Control: no-cache' -H 'Ssp-TraceID: e623b4de-f6bb-be0c-956d-c4ded0d58fc0' 'http://gpconnect.fhir.nhs.net/fhir/Patient?identifier=http://fhir.nhs.net/Id/nhs-number%7CP002'" %}
-
-
+{% include embedcurl.html title="Search for Chargeable-Status Indicator" command="curl -X GET -H 'Ssp-From: 0001' -H 'Ssp-To: 0002' -H 'Ssp-InteractionID: urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation' -H 'Cache-Control: no-cache' -H 'Ssp-TraceID: e623b4de-f6bb-be0c-956d-c4ded0d58fc0' 'http://spine-base-url/fhir-base/Observation?identifier=http://fhir.nhs.net/Id/nhs-number%7C9000000041'" %}
 
