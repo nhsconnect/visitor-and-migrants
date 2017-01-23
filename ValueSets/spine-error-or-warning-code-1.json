@@ -39,10 +39,6 @@
         "display": "Author credentials error"
       },
       {
-        "code": "0007",
-        "display": "Author credentials error"
-      },
-      {
         "code": "0008",
         "display": "Invalid value for parameter"
       },
