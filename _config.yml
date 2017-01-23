@@ -99,9 +99,9 @@ description: "Description of the site."
 sitemap: true
 
 # needed for sitemap.xml file only
-url: https://github_account.github.io/github_repo
+url: https://nhsconnect.github.io/visitor-and-migrants
 
-repository: github_account/github_repo
+repository: nhsconnect/visitor-and-migrants
 
 gist:
   noscript: false
