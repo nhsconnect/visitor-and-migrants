@@ -24,16 +24,4 @@ An intrinsic requirement to support the measures detailed above is to provide an
 
 The DoH Cost Recovery programme consists of five development phases that are outlined as part of the high-level [maturity model](design_maturity_model.html). This site will primarily focus on Phase 3.
 
-# Visitors and Migrants Ecosystem #
 
-This site is broadly structured around the API Journey outlined below:
-
-
-
-
-
-
-
-
-
-Example external link to [Google](http://www.google.com).
