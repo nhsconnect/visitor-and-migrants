@@ -14,7 +14,7 @@
         "coding": [
           {
             "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
-            "code": "VM-0002"
+            "code": "0002"
           }
         ]
       },

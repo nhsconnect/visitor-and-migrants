@@ -24,12 +24,6 @@
 		<mode value="server" />
 		<security>
 			<cors value="true" />
-			<service>
-				<coding>
-				  <system value="http://hl7.org/fhir/restful-security-service"/>
-				  <code value="Certificates"/>
-			</coding>
-			</service>
 		</security>
 		<resource>
 			<type value="Patient" />

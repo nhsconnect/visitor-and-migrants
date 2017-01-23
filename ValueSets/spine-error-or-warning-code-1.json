@@ -11,28 +11,40 @@
     "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
     "concept": [
       {
-        "code": "VM-0001",
+        "code": "0001",
         "display": "No Record Found"
       },
       {
-        "code": "VM-0002",
+        "code": "0002",
         "display": "Invalid NHS Number"
       },
       {
-        "code": "VM-0003",
+        "code": "0003",
         "display": "Invalid identifier system"
       },
       {
-        "code": "VM-0004",
+        "code": "0004",
         "display": "Invalid code system"
       },
       {
-        "code": "VM-0005",
+        "code": "0005",
         "display": "Invalid code value"
       },
       {
-        "code": "VM-0006",
+        "code": "0006",
         "display": "Invalid element"
+      },
+      {
+        "code": "0007",
+        "display": "Author credentials error"
+      },
+      {
+        "code": "0008",
+        "display": "Invalid value for parameter"
+      },
+      {
+        "code": "9999",
+        "display": "Message not well formed"
       }
     ]
   }
