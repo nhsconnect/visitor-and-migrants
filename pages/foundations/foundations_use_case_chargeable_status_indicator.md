@@ -35,10 +35,11 @@ All Visitors and Migrants APIs should include the below additional HTTP request 
 Search for a Visitors and Migrants Chargeable-Status Indicator `Observation` for a specified patient using a business identifier (i.e. the NHS Number).
 
 ```http
-GET [base]/Observation?subject:Patient.identifier=[system]|[value]
+GET [base]/Observation?subject:Patient.identifier=[system]|[value]&code=[system]|[code]
 ```
 
 - The `[system]` field for the Paient Itentifier SHALL be populated with the identifier system URL: `http://fhir.nhs.net/Id/nhs-number`.
+- The `[system]` field for the Code SHALL be populated with the identifier system URL: `http://fhir.nhs.net/fhir-observation-code-1`.
 - The `[base]` is the URL of the Spine endpoint [TO BE CONFIRMED].
 - Note: The mime-type can be specified to request either XML or JSON using another URL parameter `?_format=[mime-type]`, or a `Content-Type` HTTP header as per the [FHIR specification](https://www.hl7.org/fhir/http.html#mime-type).
 
@@ -166,7 +167,7 @@ Failure:
               "coding": [
                 {
                   "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
-                  "code": "VM-0002"
+                  "code": "0002"
                 }]
             },
             "diagnostics": "Invalid NHS Number"
