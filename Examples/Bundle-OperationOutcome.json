@@ -1,0 +1,38 @@
+{
+  "resourceType": "Bundle",
+  "id": "67883730-d1a8-11e6-9598-0800200c9a66",
+  "meta": {
+    "profile": [
+      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+    ]
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "ff00d600-d1a6-11e6-9598-0800200c9a66",
+        "meta": {
+          "profile": [
+            "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
+          ]
+        },
+        "issue": [
+          {
+            "severity": "error",
+            "code": "invalid",
+            "details": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
+                  "code": "0002"
+                }
+              ]
+            },
+            "diagnostics": "Invalid NHS Number"
+          }
+        ]
+      }
+    }
+  ]
+}

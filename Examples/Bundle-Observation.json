@@ -1,0 +1,81 @@
+{
+  "resourceType": "Bundle",
+  "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
+  "meta": {
+    "profile": [
+      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+    ]
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
+        "meta": {
+          "profile": [
+            "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.nhs.net/fhir-observation-code-1",
+              "code": "0001",
+              "display": "Visitors and Migrants status observation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
+          "display": "Miss Mary Taylor"
+        },
+        "effectiveDateTime": "2015-01-01T15:00:00+00:00",
+        "issued": "2015-02-01T10:00:00+00:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "code": "bcs",
+                  "display": "Basic Chargeable Status"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-chargeable-status-1",
+                  "code": "y",
+                  "display": "Chargeable"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "code": "ccs",
+                  "display": "Category Chargeable Status"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.nhs.net/spine-category-status-1",
+                  "code": "F",
+                  "display": "F"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
