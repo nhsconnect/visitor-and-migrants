@@ -56,11 +56,6 @@ Success:
 {
 "resourceType": "Bundle",
   "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
-  "meta": {
-    "profile": [
-      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
-    ]
-  },
   "type": "searchset",
   "entry": [
     {
@@ -82,7 +77,7 @@ Success:
             }]
         },
         "subject": {
-          "reference": "Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66",
+          "reference": "Patient/9900002831",
           "display": "Miss Mary Taylor"
         },
         "effectiveDateTime": "2015-01-01T15:00:00+00:00",
@@ -141,11 +136,6 @@ Failure:
 {
 "resourceType": "Bundle",
   "id": "67883730-d1a8-11e6-9598-0800200c9a66",
-  "meta": {
-    "profile": [
-      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
-    ]
-  },
   "type": "searchset",
   "entry": [
     {
@@ -183,7 +173,7 @@ Failure:
 ```csharp
 var client = new FhirClient("http://spine-base-url/fhir-base/");
 client.PreferredFormat = ResourceFormat.Json;
-var query = new string[] { "identifier=http://fhir.nhs.net/Id/nhs-number|9000000041" };
+var query = new string[] { "identifier=http://fhir.nhs.net/Id/nhs-number|9900002831" };
 var bundle = client.Search("Patient", query);
 FhirSerializer.SerializeResourceToXml(bundle).Dump();
 ```
@@ -194,12 +184,12 @@ FhirSerializer.SerializeResourceToXml(bundle).Dump();
 FhirContext ctx = new FhirContext();
 IGenericClient client = ctx.newRestfulGenericClient("http://spine-base-url/fhir-base/");
 Bundle bundle = client.search().forResource(Observation.class)
-.where(new TokenClientParam("identifier").exactly().systemAndCode("http://fhir.nhs.net/Id/nhs-number", "9000000041"))
+.where(new TokenClientParam("identifier").exactly().systemAndCode("http://fhir.nhs.net/Id/nhs-number", "9900002831"))
 .encodedXml()
 .execute();
 ```
 
 #### cURL ####
 
-{% include embedcurl.html title="Search for Chargeable-Status Indicator" command="curl -X GET -H 'Ssp-From: 0001' -H 'Ssp-To: 0002' -H 'Ssp-InteractionID: urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation' -H 'Cache-Control: no-cache' -H 'Ssp-TraceID: e623b4de-f6bb-be0c-956d-c4ded0d58fc0' 'http://spine-base-url/fhir-base/Observation?identifier=http://fhir.nhs.net/Id/nhs-number%7C9000000041'" %}
+{% include embedcurl.html title="Search for Chargeable-Status Indicator" command="curl -X GET -H 'Ssp-From: 0001' -H 'Ssp-To: 0002' -H 'Ssp-InteractionID: urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation' -H 'Cache-Control: no-cache' -H 'Ssp-TraceID: e623b4de-f6bb-be0c-956d-c4ded0d58fc0' 'http://spine-base-url/fhir-base/Observation?identifier=http://fhir.nhs.net/Id/nhs-number%7C9900002831'" %}
 

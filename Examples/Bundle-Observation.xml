@@ -1,59 +1,56 @@
 <Bundle xmlns="http://hl7.org/fhir">
-	<id value="6f759a10-d1b6-11e6-9598-0800200c9a66" />
-	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1" />
-	</meta>
-	<type value="searchset" />
+	<id value="6f759a10-d1b6-11e6-9598-0800200c9a66"/>
+	<type value="searchset"/>
 	<entry>
 		<resource>
 			<Observation>
-				<id value="76e39290-d1aa-11e6-9598-0800200c9a66" />
+				<id value="76e39290-d1aa-11e6-9598-0800200c9a66"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1" />
+					<profile value="http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"/>
 				</meta>
-				<status value="final" />
+				<status value="final"/>
 				<code>
 					<coding>
-						<system value="http://fhir.nhs.net/fhir-observation-code-1" />
-						<code value="0001" />
-						<display value="Visitors and Migrants status observation" />
+						<system value="http://fhir.nhs.net/fhir-observation-code-1"/>
+						<code value="0001"/>
+						<display value="Visitors and Migrants status observation"/>
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/e88cdcd0-d1aa-11e6-9598-0800200c9a66" />
-					<display value="Miss Mary Taylor" />
+					<reference value="Patient/9900002831"/>
+					<display value="Miss Mary Taylor"/>
 				</subject>
-				<effectiveDateTime value="2015-01-01T15:00:00+00:00" />
-				<issued value="2015-02-01T10:00:00+00:00" />
+				<effectiveDateTime value="2015-01-01T15:00:00+00:00"/>
+				<issued value="2015-02-01T10:00:00+00:00"/>
 				<component>
 					<code>
 						<coding>
-							<system value="http://fhir.nhs.net/spine-vm-observation-component-1" />
-							<code value="bcs" />
-							<display value="Basic Chargeable Status" />
+							<system value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
+							<code value="bcs"/>
+							<display value="Basic Chargeable Status"/>
 						</coding>
 					</code>
 					<valueCodeableConcept>
 						<coding>
-							<system value="http://fhir.nhs.net/spine-chargeable-status-1" />
-							<code value="y" />
-							<display value="Chargeable" />
+							<system value="http://fhir.nhs.net/spine-chargeable-status-1"/>
+							<code value="y"/>
+							<display value="Chargeable"/>
 						</coding>
 					</valueCodeableConcept>
 				</component>
 				<component>
 					<code>
 						<coding>
-							<system value="http://fhir.nhs.net/spine-vm-observation-component-1" />
-							<code value="ccs" />
-							<display value="Category Chargeable Status" />
+							<system value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
+							<code value="ccs"/>
+							<display value="Category Chargeable Status"/>
 						</coding>
 					</code>
 					<valueCodeableConcept>
 						<coding>
-							<system value="http://fhir.nhs.net/spine-category-status-1" />
-							<code value="F" />
-							<display value="F" />
+							<system value="http://fhir.nhs.net/spine-category-status-1"/>
+							<code value="F"/>
+							<display value="F"/>
 						</coding>
 					</valueCodeableConcept>
 				</component>

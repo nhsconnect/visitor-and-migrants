@@ -1,8 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
 	<id value="67883730-d1a8-11e6-9598-0800200c9a66" />
-	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1" />
-	</meta>
 	<type value="searchset" />
 	<entry>
 		<resource>
