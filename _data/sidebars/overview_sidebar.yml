@@ -38,7 +38,7 @@ entries:
     - title: FHIR&reg; Conformance Profile
       url: /foundations_use_case_get_the_fhir_conformance_profile.html
       output: web
-    - title: Search / Read V&M Chargeable-Status Indicator
+    - title: Search V&M Chargeable-Status Indicator
       url: /foundations_use_case_chargeable_status_indicator.html
       output: web
 

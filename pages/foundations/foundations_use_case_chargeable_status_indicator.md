@@ -81,7 +81,6 @@ Success:
           "display": "Miss Mary Taylor"
         },
         "effectiveDateTime": "2015-01-01T15:00:00+00:00",
-        "issued": "2015-02-01T10:00:00+00:00",
         "component": [
           {
             "code": {
