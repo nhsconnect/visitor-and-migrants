@@ -126,10 +126,26 @@ Success:
 }
 ```
 
+- Additional examples are available here - [XML](Examples/Bundle-Observation.xml) and [JSON](Examples/Bundle-Observation.json)
+
 Failure: 
 
-- SHALL return a `4xx` or `5xx` HTTP status code  with an `OperationOutcome` resource that conforms to the `spine-operationoutcome-1` profile if the search cannot be executed (not that there is no match):
-- The types of error in an `ObservationOutcome` are defined in the [Spine Error or Warning Code ValueSet](/ValueSets/spine-error-or-warning-code-1.xml)
+- SHALL return one of the below HTTP status error codes with an `OperationOutcome` resource that conforms to the `spine-operationoutcome-1` profile if the search cannot be executed (not that there is no match).
+- The below table summarises the types of error that could occur, and the HTTP response codes, along with the values to expect in the `ObservationOutcome` in the response body.
+
+| HTTP Code | issue-severity | issue-type | Details.Code | Details.Display |
+|-----------|----------------|------------|--------------|-----------------|
+|404 | error | not-found | 0001 | No Record Found |
+|400 | error | invalid | 0002 | Invalid NHS Number |
+|400 | error | code-invalid | 0003 | Invalid identifier system |
+|400 | error | code-invalid | 0004 | Invalid code system |
+|400 | error | code-invalid | 0005 | Invalid code value |
+|400 | error | value | 0006 | Invalid element |
+|401 | fatal | forbidden | 0007 | Author credentials error |
+|400 | error | invalid | 0008 | Invalid value for parameter |
+|400 | error |  structure | 9999 | Message not well formed |
+
+- The error codes are defined in the [Spine Error or Warning Code ValueSet](/ValueSets/spine-error-or-warning-code-1.xml)
 
 ```json
 {
@@ -164,6 +180,8 @@ Failure:
   ]
 }
 ```
+
+- Additional examples are available here - [XML](Examples/Bundle-OperationOutcome.xml) and [JSON](Examples/Bundle-OperationOutcome.json)
 
 ### Example Code ###
 
