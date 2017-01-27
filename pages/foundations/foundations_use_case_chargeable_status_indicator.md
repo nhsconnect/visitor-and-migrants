@@ -143,9 +143,11 @@ Failure:
 |400 | error | value | 0006 | Invalid element |
 |401 | fatal | forbidden | 0007 | Author credentials error |
 |400 | error | invalid | 0008 | Invalid value for parameter |
+|400 | error | invalid | 0009 | Request does not match audit record |
 |400 | error |  structure | 9999 | Message not well formed |
 
 - The error codes are defined in the [Spine Error or Warning Code ValueSet](/ValueSets/spine-error-or-warning-code-1.xml)
+- Error 0009 would occur if the NHS number being requested in the search request does not match the requested_record value in the JWT - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details.
 
 ```json
 {

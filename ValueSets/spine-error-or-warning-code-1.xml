@@ -41,6 +41,10 @@
 			<display value="Invalid value for parameter"/>
 		</concept>
 		<concept>
+			<code value="0009"/>
+			<display value="Request does not match audit record"/>
+		</concept>
+		<concept>
 			<code value="9999"/>
 			<display value="Message not well formed"/>
 		</concept>
