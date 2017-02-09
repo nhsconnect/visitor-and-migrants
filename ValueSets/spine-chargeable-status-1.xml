@@ -1,1 +1,27 @@
-<ValueSet xmlns="http://hl7.org/fhir"><meta><lastUpdated value="2016-12-03T00:00:00+00:00" /></meta><url value="http://fhir.nhs.net/ValueSet/spine-chargeable-status-1" /><name value="Spine Chargeable Status" /><status value="draft" /><description value="Basic chargeable status for the patient." /><codeSystem><system value="http://fhir.nhs.net/spine-chargeable-status-1" /><concept><code value="y" /><display value="Chargeable" /><definition value="The patient is likely chargeable for NHS Services" /></concept><concept><code value="n" /><display value="Not Chargeable" /><definition value="Paid or exempt from the health surcharge. " /></concept><concept><code value="u" /><display value="Unset" /><definition value="No specific information is available from the HO or an OVM to make a chargeable status determination" /></concept></codeSystem></ValueSet>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<lastUpdated value="2016-12-03T00:00:00+00:00"/>
+	</meta>
+	<url value="http://fhir.nhs.net/ValueSet/spine-chargeable-status-1"/>
+	<name value="Spine Chargeable Status"/>
+	<status value="draft"/>
+	<description value="Basic chargeable status for the patient."/>
+	<codeSystem>
+		<system value="http://fhir.nhs.net/spine-chargeable-status-1"/>
+		<concept>
+			<code value="Y"/>
+			<display value="Chargeable"/>
+			<definition value="The patient is likely chargeable for NHS Services."/>
+		</concept>
+		<concept>
+			<code value="N"/>
+			<display value="Not Chargeable"/>
+			<definition value="Paid or exempt from the health surcharge. "/>
+		</concept>
+		<concept>
+			<code value="U"/>
+			<display value="Unset"/>
+			<definition value="No specific information is available from the HO or an OVM to make a chargeable status determination."/>
+		</concept>
+	</codeSystem>
+</ValueSet>

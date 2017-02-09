@@ -2,6 +2,22 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
+    "tag": [
+      {
+        "system": "urn:hscic:examples",
+        "code": "Practitioner1a",
+        "display": "Practitioner1a example"
+      },
+      {
+        "system": "urn:hscic:examples",
+        "code": "Practitioner1b",
+        "display": "Practitioner1b example"
+      },
+      {
+        "system": "urn:hscic:publishOrder",
+        "code": "2"
+      }
+    ]
   },
   "url": "http://fhir.nhs.net/StructureDefinition/audit-practitioner-1",
   "version": "1.0",

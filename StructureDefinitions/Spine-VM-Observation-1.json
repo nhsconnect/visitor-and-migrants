@@ -10,7 +10,7 @@
       },
       {
         "system": "urn:hscic:publishOrder",
-        "code": "3"
+        "code": "1"
       }
     ]
   },
@@ -1217,7 +1217,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "visitors and migrants status observation",
+        "fixedString": "Visitors and Migrants status observation",
         "isSummary": true,
         "mapping": [
           {
@@ -5043,7 +5043,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "bcs",
+        "fixedCode": "BASIC_CHARGEABLE_STATUS",
         "isSummary": true,
         "mapping": [
           {
@@ -5721,7 +5721,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "ccs",
+        "fixedCode": "CATEGORY_CHARGEABLE_STATUS",
         "isSummary": true,
         "mapping": [
           {
@@ -6715,7 +6715,7 @@
             "code": "string"
           }
         ],
-        "fixedString": "visitors and migrants status observation",
+        "fixedString": "Visitors and Migrants status observation",
         "isSummary": true,
         "mapping": [
           {
@@ -7575,7 +7575,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "bcs",
+        "fixedCode": "BASIC_CHARGEABLE_STATUS",
         "isSummary": true,
         "mapping": [
           {
@@ -7988,7 +7988,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "ccs",
+        "fixedCode": "CATEGORY_CHARGEABLE_STATUS",
         "isSummary": true,
         "mapping": [
           {

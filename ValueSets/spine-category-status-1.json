@@ -11,44 +11,44 @@
     "system": "http://fhir.nhs.net/spine-category-status-1",
     "concept": [
       {
-        "code": "None",
+        "code": "NONE",
         "display": "None",
-        "definition": "No status, use to negate any previous status"
+        "definition": "No status, use to negate any previous status."
       },
       {
-        "code": "Decision_Pending",
+        "code": "DECISION_PENDING",
         "display": "Decision Pending",
-        "definition": "Awaiting confirmation of charging status"
+        "definition": "Awaiting confirmation of charging status."
       },
       {
         "code": "A",
-        "display": "A",
-        "definition": "Ordinarily resident in the UK (according to the domestic Charging Regulations)"
+        "display": "Standard NHS",
+        "definition": "Ordinarily resident in the UK (according to the domestic Charging Regulations)."
       },
       {
         "code": "B",
-        "display": "B",
-        "definition": "Resident in UK, in possession of a valid visa AND (surcharge paid OR exempt)"
+        "display": "Surcharge Payee (or exempt)",
+        "definition": "Resident in UK, in possession of a valid visa AND (surcharge paid OR exempt)."
       },
       {
         "code": "C",
-        "display": "C",
-        "definition": "Ordinarily resident in another EEA country AND (EHIC/PRC/S2 OR exempt)"
+        "display": "Charge exempt (EHIC/PRC/S2)",
+        "definition": "Ordinarily resident in another EEA country AND (EHIC/PRC/S2 OR exempt)."
       },
       {
         "code": "D",
-        "display": "D",
-        "definition": "Ordinarily resident in another EEA country AND (No EHIC/PRC/S2 OR not exempt)"
+        "display": "Chargeable EEA",
+        "definition": "Ordinarily resident in another EEA country AND (No EHIC/PRC/S2 OR not exempt)."
       },
       {
         "code": "E",
-        "display": "E",
-        "definition": "Not ordinarily resident in the UK, not paid, but exempt by personal status or treatment"
+        "display": "Charge exempt overseas/non-EEA",
+        "definition": "Not ordinarily resident in the UK, not paid, but exempt by personal status or treatment."
       },
       {
         "code": "F",
-        "display": "F",
-        "definition": "Not ordinarily resident in the UK or EEA, not paid, not exempt by personal status or treatment"
+        "display": "Chargeable non-EEA",
+        "definition": "Not ordinarily resident in the UK or EEA, not paid, not exempt by personal status or treatment."
       }
     ]
   }

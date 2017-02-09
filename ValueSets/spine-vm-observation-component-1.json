@@ -11,11 +11,11 @@
     "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
     "concept": [
       {
-        "code": "bcs",
+        "code": "BASIC_CHARGEABLE_STATUS",
         "display": "Basic Chargeable Status"
       },
       {
-        "code": "ccs",
+        "code": "CATEGORY_CHARGEABLE_STATUS",
         "display": "Category Chargeable Status"
       }
     ]

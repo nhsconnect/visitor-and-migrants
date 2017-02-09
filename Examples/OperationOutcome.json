@@ -14,11 +14,12 @@
         "coding": [
           {
             "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
-            "code": "0002"
+            "code": "INVALID_NHS_NUMBER",
+            "display": "Invalid NHS number"
           }
         ]
       },
-      "diagnostics": "Invalid NHS Number"
+      "diagnostics": "An invalid NHS number format has been provided in the request"
     }
   ]
 }

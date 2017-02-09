@@ -3,7 +3,7 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
-	<version value="1.0"/>
+	<version value="1.0.0"/>
 	<name value="Audit-Organization-1"/>
 	<status value="draft"/>
 	<publisher value="NHS Digital"/>
