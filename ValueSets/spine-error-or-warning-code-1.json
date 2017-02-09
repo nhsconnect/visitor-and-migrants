@@ -115,7 +115,7 @@
         "display": "The type of request is not supported by the API call"
       },
       {
-        "code": "ACCESS DENIED",
+        "code": "ACCESS_DENIED",
         "display": "Access has been denied to process this request"
       },
       {

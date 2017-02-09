@@ -113,7 +113,7 @@
 			<display value="The type of request is not supported by the API call"/>
 		</concept>
 		<concept>
-			<code value="ACCESS DENIED"/>
+			<code value="ACCESS_DENIED"/>
 			<display value="Access has been denied to process this request"/>
 		</concept>
 		<concept>
