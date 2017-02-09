@@ -1,17 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<meta>
 		<lastUpdated value="2015-09-22T20:02:49.724+10:00"/>
-		<tag>
-			<system value="urn:hscic:examples"/>
-			<code value="Observation"/>
-			<display value="Observation example - Visitors and Migrants Status"/>
-		</tag>
-		<tag>
-			<system value="urn:hscic:publishOrder"/>
-			<code value="3"/>
-		</tag>
 	</meta>
 	<url value="http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"/>
+	<version value="1.0.0"/>
 	<name value="Spine-VM-Observation-1"/>
 	<display value="Spine-VM-Observation-1"/>
 	<status value="draft"/>
@@ -1058,7 +1050,7 @@
 			<type>
 				<code value="string"/>
 			</type>
-			<fixedString value="visitors and migrants status observation"/>
+			<fixedString value="Visitors and Migrants status observation"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -4364,7 +4356,7 @@
 			<type>
 				<code value="code"/>
 			</type>
-			<fixedCode value="bcs"/>
+			<fixedCode value="BASIC_CHARGEABLE_STATUS"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -4958,7 +4950,7 @@
 			<type>
 				<code value="code"/>
 			</type>
-			<fixedCode value="ccs"/>
+			<fixedCode value="CATEGORY_CHARGEABLE_STATUS"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -5831,7 +5823,7 @@
 			<type>
 				<code value="string"/>
 			</type>
-			<fixedString value="visitors and migrants status observation"/>
+			<fixedString value="Visitors and Migrants status observation"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -6573,7 +6565,7 @@
 			<type>
 				<code value="code"/>
 			</type>
-			<fixedCode value="bcs"/>
+			<fixedCode value="BASIC_CHARGEABLE_STATUS"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -6936,7 +6928,7 @@
 			<type>
 				<code value="code"/>
 			</type>
-			<fixedCode value="ccs"/>
+			<fixedCode value="CATEGORY_CHARGEABLE_STATUS"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>

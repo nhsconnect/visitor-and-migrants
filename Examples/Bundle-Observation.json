@@ -29,7 +29,7 @@
         },
         "subject": {
           "reference": "Patient/9900002831",
-          "display": "Miss Mary Taylor"
+          "display": "TAYLOR, Mary (Miss)"
         },
         "effectiveDateTime": "2015-01-01T15:00:00+00:00",
         "component": [
@@ -38,7 +38,7 @@
               "coding": [
                 {
                   "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
-                  "code": "bcs",
+                  "code": "BASIC_CHARGEABLE_STATUS",
                   "display": "Basic Chargeable Status"
                 }
               ]
@@ -47,7 +47,7 @@
               "coding": [
                 {
                   "system": "http://fhir.nhs.net/spine-chargeable-status-1",
-                  "code": "y",
+                  "code": "Y",
                   "display": "Chargeable"
                 }
               ]
@@ -58,7 +58,7 @@
               "coding": [
                 {
                   "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
-                  "code": "ccs",
+                  "code": "CATEGORY_CHARGEABLE_STATUS",
                   "display": "Category Chargeable Status"
                 }
               ]
@@ -68,7 +68,7 @@
                 {
                   "system": "http://fhir.nhs.net/spine-category-status-1",
                   "code": "F",
-                  "display": "F"
+                  "display": "Chargeable non-EEA"
                 }
               ]
             }

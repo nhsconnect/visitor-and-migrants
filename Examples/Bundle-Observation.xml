@@ -21,21 +21,21 @@
 				</code>
 				<subject>
 					<reference value="Patient/9900002831"/>
-					<display value="Miss Mary Taylor"/>
+					<display value="TAYLOR, Mary (Miss)"/>
 				</subject>
 				<effectiveDateTime value="2015-01-01T15:00:00+00:00"/>
 				<component>
 					<code>
 						<coding>
 							<system value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
-							<code value="bcs"/>
+							<code value="BASIC_CHARGEABLE_STATUS"/>
 							<display value="Basic Chargeable Status"/>
 						</coding>
 					</code>
 					<valueCodeableConcept>
 						<coding>
 							<system value="http://fhir.nhs.net/spine-chargeable-status-1"/>
-							<code value="y"/>
+							<code value="Y"/>
 							<display value="Chargeable"/>
 						</coding>
 					</valueCodeableConcept>
@@ -44,7 +44,7 @@
 					<code>
 						<coding>
 							<system value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
-							<code value="ccs"/>
+							<code value="CATEGORY_CHARGEABLE_STATUS"/>
 							<display value="Category Chargeable Status"/>
 						</coding>
 					</code>
@@ -52,7 +52,7 @@
 						<coding>
 							<system value="http://fhir.nhs.net/spine-category-status-1"/>
 							<code value="F"/>
-							<display value="F"/>
+							<display value="Chargeable non-EEA"/>
 						</coding>
 					</valueCodeableConcept>
 				</component>
@@ -60,3 +60,4 @@
 		</resource>
 	</entry>
 </Bundle>
+
