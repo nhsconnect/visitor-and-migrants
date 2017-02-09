@@ -21,12 +21,14 @@ All Visitors and Migrants APIs should include the below additional HTTP request 
 
 | Header               | Value |
 |----------------------|-------|
-| `Ssp-TraceID`        | Client System TraceID (i.e. GUID/UUID) |
+| `Ssp-TraceID`        | Client System TraceID (i.e. GUID/UUID). This is a unique ID that the client system should provide. It can be used to identify specific requests when troubleshooting issues with API calls. All calls into the service should have a unique TraceID so they can be uniquely identified later if required. |
 | `Ssp-From`           | Client System ASID |
 | `Ssp-To`             | The Spine ASID |
 | `Ssp-InteractionID`  | `urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation`|
+| `Ssp-Version`  | `1` |
 | `Authorization`      | This will carry the base64 encoded JSON web token required for audit - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details. |
 
+- Note: The Ssp-Version defaults to 1 if not supplied (this is currently the only version of the API). This indicates the major version of the interaction, so when new major releases of this specification are released (for example releases with breaking changes), implementors will need to specify the correct version in this header.
 
 ## Search for Chargeable-Status Indicator ##
 
