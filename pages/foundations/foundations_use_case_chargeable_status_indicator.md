@@ -21,7 +21,7 @@ All Visitors and Migrants APIs should include the below additional HTTP request 
 
 | Header               | Value |
 |----------------------|-------|
-| `Ssp-TraceID`        | Client System TraceID (i.e. GUID/UUID) |
+| `Ssp-TraceID`        | Client System TraceID (i.e. GUID/UUID). This is a unique ID that the client system should provide. It can be used to identify specific requests when troubleshooting issues with API calls. All calls into the service should have a unique TraceID so they can be uniquely identified later if required. |
 | `Ssp-From`           | Client System ASID |
 | `Ssp-To`             | The Spine ASID |
 | `Ssp-InteractionID`  | `urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation`|
