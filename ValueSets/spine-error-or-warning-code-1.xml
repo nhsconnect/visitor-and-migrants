@@ -30,7 +30,7 @@
 		</concept>
 		<concept>
 			<code value="INVALID_VALUE"/>
-			<display value="An input field has an invalid value for its type (e.g. alpha in an Integer field or a string when a Codeable Concept is expected)"/>
+			<display value="An input field has an invalid value for its type"/>
 		</concept>
 		<concept>
 			<code value="INVALID_IDENTIFIER_SYSTEM"/>
@@ -58,7 +58,7 @@
 		</concept>
 		<concept>
 			<code value="REQUEST_UNMATCHED"/>
-			<display value="Request does not match authorisation token."/>
+			<display value="Request does not match authorisation token"/>
 		</concept>
 		<concept>
 			<code value="MESSAGE_NOT_WELL_FORMED"/>
@@ -78,15 +78,15 @@
 		</concept>
 		<concept>
 			<code value="INVALID_RESOURCE"/>
-			<display value="Invalid validation of resource."/>
+			<display value="Invalid validation of resource"/>
 		</concept>
 		<concept>
 			<code value="ORGANISATION_NOT_FOUND"/>
-			<display value="Organisation not found."/>
+			<display value="Organisation not found"/>
 		</concept>
 		<concept>
 			<code value="PRACTITIONER_NOT_FOUND"/>
-			<display value="Practitioner not found."/>
+			<display value="Practitioner not found"/>
 		</concept>
 		<concept>
 			<code value="PATIENT_SENSITIVE"/>
@@ -114,7 +114,7 @@
 		</concept>
 		<concept>
 			<code value="ACCESS DENIED"/>
-			<display value="Access has been denied to process this request."/>
+			<display value="Access has been denied to process this request"/>
 		</concept>
 		<concept>
 			<code value="ASID_CHECK_FAILED"/>

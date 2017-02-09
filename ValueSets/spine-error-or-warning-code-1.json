@@ -32,7 +32,7 @@
       },
       {
         "code": "INVALID_VALUE",
-        "display": "An input field has an invalid value for its type (e.g. alpha in an Integer field or a string when a Codeable Concept is expected)"
+        "display": "An input field has an invalid value for its type"
       },
       {
         "code": "INVALID_IDENTIFIER_SYSTEM",
@@ -60,7 +60,7 @@
       },
       {
         "code": "REQUEST_UNMATCHED",
-        "display": "Request does not match authorisation token."
+        "display": "Request does not match authorisation token"
       },
       {
         "code": "MESSAGE_NOT_WELL_FORMED",
@@ -80,15 +80,15 @@
       },
       {
         "code": "INVALID_RESOURCE",
-        "display": "Invalid validation of resource."
+        "display": "Invalid validation of resource"
       },
       {
         "code": "ORGANISATION_NOT_FOUND",
-        "display": "Organisation not found."
+        "display": "Organisation not found"
       },
       {
         "code": "PRACTITIONER_NOT_FOUND",
-        "display": "Practitioner not found."
+        "display": "Practitioner not found"
       },
       {
         "code": "PATIENT_SENSITIVE",
@@ -116,7 +116,7 @@
       },
       {
         "code": "ACCESS DENIED",
-        "display": "Access has been denied to process this request."
+        "display": "Access has been denied to process this request"
       },
       {
         "code": "ASID_CHECK_FAILED",
