@@ -172,7 +172,7 @@ Failure:
 |422|warning|duplicate|FLAG_ALREADY_SET|Flag value was already set|
 |422|error|business-rule|INVALID_REQUEST_STATE|The request exists but is not in an appropriate state for the call to succeed|
 |422|error|business-rule|INVALID_REQUEST_TYPE|The type of request is not supported by the API call|
-|403|error|forbidden|ACCESS DENIED|Access has been denied to process this request|
+|403|error|forbidden|ACCESS_DENIED|Access has been denied to process this request|
 |403|error|forbidden|ASID_CHECK_FAILED|The sender or receiver's ASID is not authorised for this interaction|
 
 
