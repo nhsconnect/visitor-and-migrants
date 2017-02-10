@@ -2,25 +2,9 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:examples",
-        "code": "Practitioner1a",
-        "display": "Practitioner1a example"
-      },
-      {
-        "system": "urn:hscic:examples",
-        "code": "Practitioner1b",
-        "display": "Practitioner1b example"
-      },
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "2"
-      }
-    ]
-  },
+   },
   "url": "http://fhir.nhs.net/StructureDefinition/audit-practitioner-1",
-  "version": "1.0",
+  "version": "1.0.0",
   "name": "Audit-Practitioner-1",
   "status": "draft",
   "publisher": "NHS Digital",
@@ -2277,7 +2261,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/local-identifier",
+        "fixedUri": "http://fhir.nhs.net/Id/local-practitioner-identifier",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -7141,7 +7125,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/local-identifier",
+        "fixedUri": "http://fhir.nhs.net/Id/local-practitioner-identifier",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
