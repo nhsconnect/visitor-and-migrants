@@ -3,7 +3,7 @@
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
 	<url value="http://fhir.nhs.net/StructureDefinition/audit-practitioner-1"/>
-	<version value="1.0.0"/>"/>
+	<version value="1.0.0"/>
 	<name value="Audit-Practitioner-1"/>
 	<status value="draft"/>
 	<publisher value="NHS Digital"/>
@@ -1965,7 +1965,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/local-identifier"/>
+			<fixedUri value="http://fhir.nhs.net/Id/local-practitioner-identifier"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -6155,7 +6155,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/local-identifier"/>
+			<fixedUri value="http://fhir.nhs.net/Id/local-practitioner-identifier"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
