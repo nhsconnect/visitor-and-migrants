@@ -2,19 +2,8 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:examples",
-        "code": "OperationOutcome",
-        "display": "OperationOutcome example"
-      },
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "3"
-      }
-    ]
   },
-  "url": "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/spine-operationoutcome-1",
   "version": "1.0.0",
   "name": "Spine-OperationOutcome-1",
   "display": "Spine-OperationOutcome-1",
@@ -233,7 +222,7 @@
           "strength": "required",
           "description": "A coded expression of the type of issue",
           "valueSetReference": {
-            "reference": "http://fhir.nhs.net/ValueSet/spine-error-or-warning-code-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/spine-error-or-warning-code-1"
           }
         },
         "mapping": [
@@ -299,7 +288,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/spine-error-or-warning-code-1",
+        "fixedUri": "https://fhir.nhs.uk/spine-error-or-warning-code-1",
         "isSummary": true,
         "mapping": [
           {
@@ -668,7 +657,7 @@
           "strength": "required",
           "description": "A coded expression of the type of issue",
           "valueSetReference": {
-            "reference": "http://fhir.nhs.net/ValueSet/spine-error-or-warning-code-1"
+            "reference": "https://fhir.nhs.uk/ValueSet/spine-error-or-warning-code-1"
           }
         },
         "mapping": [
@@ -734,7 +723,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/spine-error-or-warning-code-1",
+        "fixedUri": "https://fhir.nhs.uk/spine-error-or-warning-code-1",
         "isSummary": true,
         "mapping": [
           {

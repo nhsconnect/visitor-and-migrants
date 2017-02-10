@@ -2,7 +2,7 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="http://fhir.nhs.net/StructureDefinition/audit-patient-1"/>
+	<url value="https://fhir.nhs.uk/StructureDefinition/audit-patient-1"/>
 	<version value="1.0.0"/>
 	<name value="Audit-Patient-1"/>
 	<status value="draft"/>
@@ -372,7 +372,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/nhs-number"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/nhs-number"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -514,7 +514,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 			</type>
 			<isSummary value="true"/>
 			<mapping>
@@ -4672,7 +4672,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-patient-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-patient-1"/>
 			</type>
 			<isModifier value="true"/>
 			<mapping>
@@ -4891,7 +4891,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/nhs-number"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/nhs-number"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -4980,7 +4980,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 			</type>
 			<isSummary value="true"/>
 			<mapping>
@@ -7915,7 +7915,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-patient-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-patient-1"/>
 			</type>
 			<isModifier value="true"/>
 			<mapping>

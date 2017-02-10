@@ -2,7 +2,7 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"/>
+	<url value="https://fhir.nhs.uk/StructureDefinition/spine-operationoutcome-1"/>
 	<version value="1.0.0"/>
 	<name value="Spine-OperationOutcome-1"/>
 	<display value="Spine-OperationOutcome-1"/>
@@ -190,7 +190,7 @@
 				<strength value="required"/>
 				<description value="A coded expression of the type of issue"/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-error-or-warning-code-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-error-or-warning-code-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -248,7 +248,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/spine-error-or-warning-code-1"/>
+			<fixedUri value="https://fhir.nhs.uk/spine-error-or-warning-code-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -571,7 +571,7 @@
 				<strength value="required"/>
 				<description value="A coded expression of the type of issue"/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-error-or-warning-code-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-error-or-warning-code-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -629,7 +629,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/spine-error-or-warning-code-1"/>
+			<fixedUri value="https://fhir.nhs.uk/spine-error-or-warning-code-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>

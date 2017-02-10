@@ -2,7 +2,7 @@
 	<meta>
 		<lastUpdated value="2015-09-22T20:02:49.724+10:00"/>
 	</meta>
-	<url value="http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"/>
+	<url value="https://fhir.nhs.uk/StructureDefinition/spine-vm-observation-1"/>
 	<version value="1.0.0"/>
 	<name value="Spine-VM-Observation-1"/>
 	<display value="Spine-VM-Observation-1"/>
@@ -899,7 +899,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the type of observation."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/fhir-observation-code-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/fhir-observation-code-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -961,7 +961,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/fhir-observation-code-1"/>
+			<fixedUri value="https://fhir.nhs.uk/fhir-observation-code-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -4235,7 +4235,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants status observation component."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-vm-observation-component-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-vm-observation-component-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -4297,7 +4297,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
+			<fixedUri value="https://fhir.nhs.uk/spine-vm-observation-component-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -4482,7 +4482,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants basic chargeable status for a patient."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-chargeable-status-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-chargeable-status-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -4829,7 +4829,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants status observation component."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-vm-observation-component-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-vm-observation-component-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -4891,7 +4891,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
+			<fixedUri value="https://fhir.nhs.uk/spine-vm-observation-component-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -5076,7 +5076,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants category of the chargeable status for a patient."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-category-status-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-category-status-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -5672,7 +5672,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the type of observation."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/fhir-observation-code-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/fhir-observation-code-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -5734,7 +5734,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/fhir-observation-code-1"/>
+			<fixedUri value="https://fhir.nhs.uk/fhir-observation-code-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -6444,7 +6444,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants status observation component."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-vm-observation-component-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-vm-observation-component-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -6506,7 +6506,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
+			<fixedUri value="https://fhir.nhs.uk/spine-vm-observation-component-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -6691,7 +6691,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants basic chargeable status for a patient."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-chargeable-status-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-chargeable-status-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -6807,7 +6807,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants status observation component."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-vm-observation-component-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-vm-observation-component-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -6869,7 +6869,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/spine-vm-observation-component-1"/>
+			<fixedUri value="https://fhir.nhs.uk/spine-vm-observation-component-1"/>
 			<isSummary value="true"/>
 			<mapping>
 				<identity value="v2"/>
@@ -7054,7 +7054,7 @@
 				<strength value="required"/>
 				<description value="Codes identifying the Visitors and Migrants category of the chargeable status for a patient."/>
 				<valueSetReference>
-					<reference value="http://fhir.nhs.net/ValueSet/spine-category-status-1"/>
+					<reference value="https://fhir.nhs.uk/ValueSet/spine-category-status-1"/>
 				</valueSetReference>
 			</binding>
 			<mapping>

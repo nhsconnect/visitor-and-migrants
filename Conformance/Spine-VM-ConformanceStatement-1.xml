@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Conformance xmlns="http://hl7.org/fhir">
 	<version value="1.0" />
 	<name value="Spine Visitors and Migrants API" />
@@ -37,7 +37,7 @@
 				<name value="identifier" />
 				<definition value="The NHS Number for the Patient"/>
 				<type value="token" />
-				<documentation value="The identifier for the Patient will be the NHS Number (i.e. http://fhir.nhs.net/Id/nhs-number|123456789)" />
+				<documentation value="The identifier for the Patient will be the NHS Number (i.e. https://fhir.nhs.uk/Id/nhs-number|123456789)" />
 			</searchParam>
 			</resource>
 	</rest>

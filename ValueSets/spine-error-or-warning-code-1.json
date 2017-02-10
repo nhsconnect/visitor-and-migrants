@@ -3,12 +3,12 @@
   "meta": {
     "lastUpdated": "2016-12-03T00:00:00+00:00"
   },
-  "url": "http://fhir.nhs.net/ValueSet/spine-error-or-warning-code-1",
+  "url": "https://fhir.nhs.uk/ValueSet/spine-error-or-warning-code-1",
   "name": "Spine Error or Warning Code",
   "status": "draft",
   "description": "Spine error or warning code in response to a request.",
   "codeSystem": {
-    "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
+    "system": "https://fhir.nhs.uk/spine-error-or-warning-code-1",
     "concept": [
       {
         "code": "NO_RECORD_FOUND",
@@ -115,7 +115,7 @@
         "display": "The type of request is not supported by the API call"
       },
       {
-        "code": "ACCESS_DENIED",
+        "code": "ACCESS DENIED",
         "display": "Access has been denied to process this request"
       },
       {

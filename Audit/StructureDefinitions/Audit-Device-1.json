@@ -2,20 +2,9 @@
   "resourceType": "StructureDefinition",
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
-    "tag": [
-      {
-        "system": "urn:hscic:examples",
-        "code": "Device",
-        "display": "Device example"
-      },
-      {
-        "system": "urn:hscic:publishOrder",
-        "code": "4"
-      }
-    ]
   },
-  "url": "http://fhir.nhs.net/StructureDefinition/audit-device-1",
-  "version": "1.0",
+  "url": "https://fhir.nhs.uk/StructureDefinition/audit-device-1",
+  "version": "1.0.0",
   "name": "Audit-Device-1",
   "status": "draft",
   "publisher": "NHS Digital",
@@ -600,7 +589,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ]
           }
         ],
@@ -693,7 +682,7 @@
         "binding": {
           "strength": "preferred",
           "description": "Defines the nature of the device and the kind of functionality/services/behavior that may be expected from it.",
-          "valueSetUri": "http://fhir.nhs.net/ValueSet/device-type-codes-snct-1"
+          "valueSetUri": "https://fhir.nhs.uk/ValueSet/device-type-codes-snct-1"
         },
         "mapping": [
           {
@@ -1450,7 +1439,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-patient-1"
             ]
           }
         ],
@@ -2026,7 +2015,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ]
           }
         ],
@@ -2066,7 +2055,7 @@
         "binding": {
           "strength": "preferred",
           "description": "Defines the nature of the device and the kind of functionality/services/behavior that may be expected from it.",
-          "valueSetUri": "http://fhir.nhs.net/ValueSet/device-type-codes-snct-1"
+          "valueSetUri": "https://fhir.nhs.uk/ValueSet/device-type-codes-snct-1"
         },
         "mapping": [
           {
@@ -2795,7 +2784,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-patient-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-patient-1"
             ]
           }
         ],
