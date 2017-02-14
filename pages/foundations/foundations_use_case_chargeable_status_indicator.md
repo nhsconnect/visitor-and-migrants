@@ -38,8 +38,8 @@ Search for a Visitors and Migrants Chargeable-Status Indicator `Observation` for
 GET [base]/Observation?subject:Patient.identifier=[system]|[value]&code=[system]|[code]
 ```
 
-- The `[system]` field for the Paient Itentifier SHALL be populated with the identifier system URL: `http://fhir.nhs.net/Id/nhs-number`.
-- The `[system]` field for the Code SHALL be populated with the identifier system URL: `http://fhir.nhs.net/fhir-observation-code-1`.
+- The `[system]` field for the Paient Itentifier SHALL be populated with the identifier system URL: `https://fhir.nhs.uk/Id/nhs-number`.
+- The `[system]` field for the Code SHALL be populated with the identifier system URL: `https://fhir.nhs.uk/fhir-observation-code-1`.
 - The `[base]` is the URL of the Spine endpoint.
 - Note: The mime-type can be specified to request either XML or JSON using another URL parameter `?_format=[mime-type]`, or a `Content-Type` HTTP header as per the [FHIR specification](https://www.hl7.org/fhir/http.html#mime-type).
 
@@ -60,7 +60,7 @@ Success:
   "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
   "meta": {
     "profile": [
-      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+      "https://fhir.nhs.uk/StructureDefinition/spine-searchset-bundle-1"
     ]
   },
   "type": "searchset",
@@ -71,14 +71,14 @@ Success:
         "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
         "meta": {
           "profile": [
-            "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
+            "https://fhir.nhs.uk/StructureDefinition/spine-vm-observation-1"
           ]
         },
         "status": "final",
         "code": {
           "coding": [
             {
-              "system": "http://fhir.nhs.net/fhir-observation-code-1",
+              "system": "https://fhir.nhs.uk/fhir-observation-code-1",
               "code": "0001",
               "display": "Visitors and Migrants status observation"
             }
@@ -94,7 +94,7 @@ Success:
             "code": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "system": "https://fhir.nhs.uk/spine-vm-observation-component-1",
                   "code": "BASIC_CHARGEABLE_STATUS",
                   "display": "Basic Chargeable Status"
                 }
@@ -103,7 +103,7 @@ Success:
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-chargeable-status-1",
+                  "system": "https://fhir.nhs.uk/spine-chargeable-status-1",
                   "code": "Y",
                   "display": "Chargeable"
                 }
@@ -114,7 +114,7 @@ Success:
             "code": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "system": "https://fhir.nhs.uk/spine-vm-observation-component-1",
                   "code": "CATEGORY_CHARGEABLE_STATUS",
                   "display": "Category Chargeable Status"
                 }
@@ -123,7 +123,7 @@ Success:
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-category-status-1",
+                  "system": "https://fhir.nhs.uk/spine-category-status-1",
                   "code": "F",
                   "display": "Chargeable non-EEA"
                 }
@@ -191,7 +191,7 @@ Failure:
         "id": "ff00d600-d1a6-11e6-9598-0800200c9a66",
         "meta": {
           "profile": [
-            "http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1"
+            "https://fhir.nhs.uk/StructureDefinition/spine-operationoutcome-1"
           ]
         },
         "issue": [
@@ -201,7 +201,7 @@ Failure:
             "details": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-error-or-warning-code-1",
+                  "system": "https://fhir.nhs.uk/spine-error-or-warning-code-1",
                   "code": "INVALID_NHS_NUMBER",
                   "display": "Invalid NHS number"
                 }
@@ -225,7 +225,7 @@ Failure:
 ```csharp
 var client = new FhirClient("http://spine-base-url/fhir-base/");
 client.PreferredFormat = ResourceFormat.Json;
-var query = new string[] { "identifier=http://fhir.nhs.net/Id/nhs-number|9900002831" };
+var query = new string[] { "identifier=https://fhir.nhs.uk/Id/nhs-number|9900002831" };
 var bundle = client.Search("Patient", query);
 FhirSerializer.SerializeResourceToXml(bundle).Dump();
 ```
@@ -236,12 +236,12 @@ FhirSerializer.SerializeResourceToXml(bundle).Dump();
 FhirContext ctx = new FhirContext();
 IGenericClient client = ctx.newRestfulGenericClient("http://spine-base-url/fhir-base/");
 Bundle bundle = client.search().forResource(Observation.class)
-.where(new TokenClientParam("identifier").exactly().systemAndCode("http://fhir.nhs.net/Id/nhs-number", "9900002831"))
+.where(new TokenClientParam("identifier").exactly().systemAndCode("https://fhir.nhs.uk/Id/nhs-number", "9900002831"))
 .encodedXml()
 .execute();
 ```
 
 #### cURL ####
 
-{% include embedcurl.html title="Search for Chargeable-Status Indicator" command="curl -X GET -H 'Ssp-From: 0001' -H 'Ssp-To: 0002' -H 'Ssp-InteractionID: urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation' -H 'Cache-Control: no-cache' -H 'Ssp-TraceID: e623b4de-f6bb-be0c-956d-c4ded0d58fc0' 'http://spine-base-url/fhir-base/Observation?identifier=http://fhir.nhs.net/Id/nhs-number%7C9900002831'" %}
+{% include embedcurl.html title="Search for Chargeable-Status Indicator" command="curl -X GET -H 'Ssp-From: 0001' -H 'Ssp-To: 0002' -H 'Ssp-InteractionID: urn:nhs:names:services:visitorsandmigrants:fhir:rest:search:observation' -H 'Cache-Control: no-cache' -H 'Ssp-TraceID: e623b4de-f6bb-be0c-956d-c4ded0d58fc0' 'http://spine-base-url/fhir-base/Observation?identifier=https://fhir.nhs.uk/Id/nhs-number%7C9900002831'" %}
 

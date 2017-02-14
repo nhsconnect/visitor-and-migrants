@@ -2,7 +2,7 @@
 	<meta>
 		<lastUpdated value="2016-08-03T00:00:00+01:00"/>
 	</meta>
-	<url value="http://fhir.nhs.net/StructureDefinition/audit-practitioner-1"/>
+	<url value="https://fhir.nhs.uk/StructureDefinition/audit-practitioner-1"/>
 	<version value="1.0.0"/>
 	<name value="Audit-Practitioner-1"/>
 	<status value="draft"/>
@@ -394,7 +394,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="ttp://fhir.nhs.net/Id/sds-role-profile-id"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -535,7 +535,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/organization-1"/>
 			</type>
 			<isSummary value="true"/>
 			<mapping>
@@ -918,7 +918,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/sds-user-id"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/sds-user-id"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -1442,7 +1442,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/sds-role-profile-id"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -1965,7 +1965,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/local-practitioner-identifier"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/local-practitioner-identifier"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -3487,7 +3487,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 				<aggregation value="referenced"/>
 			</type>
 			<isModifier value="false"/>
@@ -3623,7 +3623,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/ValueSet/sds-job-role-name-1"/>
+			<fixedUri value="https://fhir.nhs.uk/ValueSet/sds-job-role-name-1"/>
 			<isModifier value="false"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -4689,7 +4689,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 			</type>
 			<isModifier value="false"/>
 			<isSummary value="true"/>
@@ -5064,7 +5064,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 			</type>
 			<isModifier value="false"/>
 			<mapping>
@@ -5195,7 +5195,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/ValueSet/human-language-1"/>
+			<fixedUri value="https://fhir.nhs.uk/ValueSet/human-language-1"/>
 			<isModifier value="false"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -5493,7 +5493,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="ttp://fhir.nhs.net/Id/sds-role-profile-id"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -5581,7 +5581,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/organization-1"/>
 			</type>
 			<isSummary value="true"/>
 			<mapping>
@@ -5714,7 +5714,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/sds-user-id"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/sds-user-id"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -5935,7 +5935,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/sds-role-profile-id"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/sds-role-profile-id"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -6155,7 +6155,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/Id/local-practitioner-identifier"/>
+			<fixedUri value="https://fhir.nhs.uk/Id/local-practitioner-identifier"/>
 			<exampleUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -7416,7 +7416,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 				<aggregation value="referenced"/>
 			</type>
 			<isModifier value="false"/>
@@ -7552,7 +7552,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/ValueSet/sds-job-role-name-1"/>
+			<fixedUri value="https://fhir.nhs.uk/ValueSet/sds-job-role-name-1"/>
 			<isModifier value="false"/>
 			<isSummary value="true"/>
 			<mapping>
@@ -8534,7 +8534,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 			</type>
 			<isModifier value="false"/>
 			<isSummary value="true"/>
@@ -8909,7 +8909,7 @@
 			</base>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://fhir.nhs.net/StructureDefinition/audit-organization-1"/>
+				<profile value="https://fhir.nhs.uk/StructureDefinition/audit-organization-1"/>
 			</type>
 			<isModifier value="false"/>
 			<mapping>
@@ -9040,7 +9040,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://fhir.nhs.net/ValueSet/human-language-1"/>
+			<fixedUri value="https://fhir.nhs.uk/ValueSet/human-language-1"/>
 			<isModifier value="false"/>
 			<isSummary value="true"/>
 			<mapping>

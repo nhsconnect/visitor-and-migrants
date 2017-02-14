@@ -3,7 +3,7 @@
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00",
    },
-  "url": "http://fhir.nhs.net/StructureDefinition/audit-practitioner-1",
+  "url": "https://fhir.nhs.uk/StructureDefinition/audit-practitioner-1",
   "version": "1.0.0",
   "name": "Audit-Practitioner-1",
   "status": "draft",
@@ -450,7 +450,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "ttp://fhir.nhs.net/Id/sds-role-profile-id",
+        "fixedUri": "https://fhir.nhs.uk/Id/sds-role-profile-id",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -615,7 +615,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/organization-1"
             ]
           }
         ],
@@ -1054,7 +1054,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/sds-user-id",
+        "fixedUri": "https://fhir.nhs.uk/Id/sds-user-id",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -1658,7 +1658,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/sds-role-profile-id",
+        "fixedUri": "https://fhir.nhs.uk/Id/sds-role-profile-id",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -2261,7 +2261,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/local-practitioner-identifier",
+        "fixedUri": "https://fhir.nhs.uk/Id/local-practitioner-identifier",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -4031,7 +4031,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ],
             "aggregation": [
               "referenced"
@@ -4193,7 +4193,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/ValueSet/sds-job-role-name-1",
+        "fixedUri": "https://fhir.nhs.uk/ValueSet/sds-job-role-name-1",
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -5437,7 +5437,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ]
           }
         ],
@@ -5876,7 +5876,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ]
           }
         ],
@@ -6031,7 +6031,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/ValueSet/human-language-1",
+        "fixedUri": "https://fhir.nhs.uk/ValueSet/human-language-1",
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -6373,7 +6373,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "ttp://fhir.nhs.net/Id/sds-role-profile-id",
+        "fixedUri": "https://fhir.nhs.uk/Id/sds-role-profile-id",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -6473,7 +6473,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/organization-1"
             ]
           }
         ],
@@ -6624,7 +6624,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/sds-user-id",
+        "fixedUri": "https://fhir.nhs.uk/Id/sds-user-id",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -6875,7 +6875,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/sds-role-profile-id",
+        "fixedUri": "https://fhir.nhs.uk/Id/sds-role-profile-id",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -7125,7 +7125,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/Id/local-practitioner-identifier",
+        "fixedUri": "https://fhir.nhs.uk/Id/local-practitioner-identifier",
         "exampleUri": "http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri",
         "isSummary": true,
         "mapping": [
@@ -8584,7 +8584,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ],
             "aggregation": [
               "referenced"
@@ -8746,7 +8746,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/ValueSet/sds-job-role-name-1",
+        "fixedUri": "https://fhir.nhs.uk/ValueSet/sds-job-role-name-1",
         "isModifier": false,
         "isSummary": true,
         "mapping": [
@@ -9892,7 +9892,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ]
           }
         ],
@@ -10331,7 +10331,7 @@
           {
             "code": "Reference",
             "profile": [
-              "http://fhir.nhs.net/StructureDefinition/audit-organization-1"
+              "https://fhir.nhs.uk/StructureDefinition/audit-organization-1"
             ]
           }
         ],
@@ -10486,7 +10486,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://fhir.nhs.net/ValueSet/human-language-1",
+        "fixedUri": "https://fhir.nhs.uk/ValueSet/human-language-1",
         "isModifier": false,
         "isSummary": true,
         "mapping": [

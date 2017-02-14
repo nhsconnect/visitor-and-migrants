@@ -3,7 +3,7 @@
   "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
   "meta": {
     "profile": [
-      "http://fhir.nhs.net/StructureDefinition/spine-searchset-bundle-1"
+      "https://fhir.nhs.uk/StructureDefinition/spine-searchset-bundle-1"
     ]
   },
   "type": "searchset",
@@ -14,14 +14,14 @@
         "id": "76e39290-d1aa-11e6-9598-0800200c9a66",
         "meta": {
           "profile": [
-            "http://fhir.nhs.net/StructureDefinition/spine-vm-observation-1"
+            "https://fhir.nhs.uk/StructureDefinition/spine-vm-observation-1"
           ]
         },
         "status": "final",
         "code": {
           "coding": [
             {
-              "system": "http://fhir.nhs.net/fhir-observation-code-1",
+              "system": "https://fhir.nhs.uk/fhir-observation-code-1",
               "code": "0001",
               "display": "Visitors and Migrants status observation"
             }
@@ -37,7 +37,7 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "system": "https://fhir.nhs.uk/spine-vm-observation-component-1",
                   "code": "BASIC_CHARGEABLE_STATUS",
                   "display": "Basic Chargeable Status"
                 }
@@ -46,7 +46,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-chargeable-status-1",
+                  "system": "https://fhir.nhs.uk/spine-chargeable-status-1",
                   "code": "Y",
                   "display": "Chargeable"
                 }
@@ -57,7 +57,7 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-vm-observation-component-1",
+                  "system": "https://fhir.nhs.uk/spine-vm-observation-component-1",
                   "code": "CATEGORY_CHARGEABLE_STATUS",
                   "display": "Category Chargeable Status"
                 }
@@ -66,7 +66,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://fhir.nhs.net/spine-category-status-1",
+                  "system": "https://fhir.nhs.uk/spine-category-status-1",
                   "code": "F",
                   "display": "Chargeable non-EEA"
                 }

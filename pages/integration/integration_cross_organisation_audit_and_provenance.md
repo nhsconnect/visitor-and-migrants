@@ -19,7 +19,7 @@ Consumer system SHALL generate a new JWT for each API request.
 |-------|----------|-------------|-------------|---------------|-------------------------|
 | iss | R | Client systems issuer URI | No | Yes | |
 | sub | R | ID for the user on whose behalf this request is being made. Matches `requesting_practitioner.identifier.value` | No | Yes | |
-| aud | R | Authorization server's `token_URL` | `https://authorize.fhir.nhs.net/token` | No | |
+| aud | R | Authorization server's `token_URL` | `https://authorize.fhir.nhs.uk/token` | No | |
 | exp | R | Expiration time integer after which this authorization MUST be considered invalid. | `exp` | (now + 5 minutes) UTC time in seconds | |
 | iat | R | The UTC time the JWT was created by the requesting system | `iat` | now UTC time in seconds | |
 | reason_for_request | R | Purpose for which access is being requested | `directcare` | No | |
@@ -39,14 +39,14 @@ Consumer system SHALL generate a new JWT for each API request.
 {
 	"iss": "https://[ConsumerSystemURL]",
 	"sub": "[PractitionerID]",
-	"aud": "https://authorize.fhir.nhs.net/token",
+	"aud": "https://authorize.fhir.nhs.uk/token",
 	"exp": 1469436987,
 	"iat": 1469436687,
 	"reason_for_request": "directcare",
 	"requested_record": {
 		"resourceType": "Patient",
 		"identifier": [{
-			"system": "http://fhir.nhs.net/Id/nhs-number",
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
 			"value": "[NHSNumber]"
 		}]
 	},
@@ -64,7 +64,7 @@ Consumer system SHALL generate a new JWT for each API request.
 	"requesting_organization": {
 		"resourceType": "Organization",
 		"identifier": [{
-			"system": "http://fhir.nhs.net/Id/ods-organization-code",
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 			"value": "[ODSCode]"
 		}],
 		"name": "Requesting Organisation Name"
@@ -72,7 +72,7 @@ Consumer system SHALL generate a new JWT for each API request.
 	"requesting_practitioner": {
 		"resourceType": "Practitioner",
 		"identifier": [{
-			"system": "http://fhir.nhs.net/sds-role-profile-id",
+			"system": "https://fhir.nhs.uk/sds-role-profile-id",
 			"value": "[SDSRoleProfileID]"
 		}]
 	}

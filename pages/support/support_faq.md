@@ -33,7 +33,7 @@ You are welcome to use your own ODS index (i.e. to find an organisation by name/
 
 #### Why is oAuth2 not used? ####
 
-Authentication will be via mutual TLS/SSL authentication. The JWT web token has been proposed to allow the easy bundling of related authentication details and to eliminate the need for many separate customer headers, or a bespoke GP Connect bundling format to be defined, implemented and maintained.
+Authentication will be via mutual TLS/SSL authentication. The JWT web token has been proposed to allow the easy bundling of related authentication details and to eliminate the need for many separate customer headers, or a bespoke bundling formats to be defined, implemented and maintained.
 
 #### Why are JSON Web Tokens (JWT) required? ####
 
