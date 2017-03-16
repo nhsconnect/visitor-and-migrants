@@ -12,7 +12,10 @@ summary: "Use case to search for an overseas Visitors and Migrants chargeable st
 To use this API, the requester:
 
 - SHALL have gone through accreditation and received an endpoint certificate and associated ASID (Accredited System ID) for the client system.
-- SHALL have authenticated the user using national smartcard authentication, and obtained a ticket and the UUID from the user's smartcard (this is pass in a JSON web token - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details)
+- SHALL have either:
+	- Authenticated the user using national smartcard authentication, and obtained a the UUID from the user's smartcard (and associated RBAC role from CIS), or
+	- Authenticated the user using an assured local mechanism, and obtained a local user ID and role
+	- And pass this user information in a JSON web token - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details.
 - SHALL have previously traced the patient's NHS Number using PDS or an equivalent service.
 
 ## Request Headers ##
