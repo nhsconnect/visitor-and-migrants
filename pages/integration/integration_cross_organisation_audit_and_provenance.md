@@ -53,6 +53,7 @@ Consumer system SHALL generate a new JWT for each API request.
 	"requested_scopes": "patient/*.read",
 	"requesting_device": {
 		"resourceType": "Device",
+		"id": "[DeviceID]",
 		"identifier": [{
 			"system": "[DeviceSystem]",
 			"value": "[DeviceID]"
@@ -63,6 +64,7 @@ Consumer system SHALL generate a new JWT for each API request.
 	},
 	"requesting_organization": {
 		"resourceType": "Organization",
+		"id": "[OrganizationID]",
 		"identifier": [{
 			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
 			"value": "[ODSCode]"
@@ -71,6 +73,7 @@ Consumer system SHALL generate a new JWT for each API request.
 	},
 	"requesting_practitioner": {
 		"resourceType": "Practitioner",
+		"id": "[PractitionerID]",
 		"identifier": [{
 			"system": "https://fhir.nhs.uk/sds-role-profile-id",
 			"value": "[SDSRoleProfileID]"
