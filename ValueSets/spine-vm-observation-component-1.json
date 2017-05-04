@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "lastUpdated": "2016-12-03T00:00:00+00:00"
+  },
+  "url": "https://fhir.nhs.uk/ValueSet/spine-vm-observation-component-1",
+  "name": "Spine VM Observation Component",
+  "status": "draft",
+  "description": "Codes identifying the Visitors and Migrants observation component.",
+  "codeSystem": {
+    "system": "https://fhir.nhs.uk/spine-vm-observation-component-1",
+    "concept": [
+      {
+        "code": "BASIC_CHARGEABLE_STATUS",
+        "display": "Basic Chargeable Status"
+      },
+      {
+        "code": "CATEGORY_CHARGEABLE_STATUS",
+        "display": "Category Chargeable Status"
+      }
+    ]
+  }
+}
