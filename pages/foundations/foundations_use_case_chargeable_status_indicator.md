@@ -61,11 +61,6 @@ Success:
 {
  "resourceType": "Bundle",
   "id": "6f759a10-d1b6-11e6-9598-0800200c9a66",
-  "meta": {
-    "profile": [
-      "https://fhir.nhs.uk/StructureDefinition/spine-searchset-bundle-1"
-    ]
-  },
   "type": "searchset",
   "entry": [
     {
