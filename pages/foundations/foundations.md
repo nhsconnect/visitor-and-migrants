@@ -13,7 +13,7 @@ summary: "All about the common foundation capabilities."
 
 The foundations capability cover the basic API requirements and prerequisites to utilise the Visitors and Migrants API.
 
-{% include important.html content="In order to successfully make us of the Visitors and Migrants API, initially a level of pre-existing accredited Spine connectivity will be required along with some FHIR foundation API capabilities." %}
+{% include important.html content="In order to successfully make use of the Visitors and Migrants API, initially a level of pre-existing accredited Spine connectivity will be required along with some FHIR foundation API capabilities." %}
 
 {% include roadmap.html content="Over time the necessity to have access to pre-existing spine services (i.e. PDS and SDS integration) is likely to be replaced by FHIR based equivalents." %}
 
