@@ -24,5 +24,5 @@ Audit Profiles:
 | [Audit-Patient-1](https://fhir.nhs.uk/StructureDefinition/audit-patient-1) | Patient ([json](Audit/Examples/Patient.json)/[xml](Audit/Examples/Patient.xml)) |  | [Development Example Code - Coming Soon] |
 | [Audit-Device-1](https://fhir.nhs.uk/StructureDefinition/audit-device-1) | Device ([json](Audit/Examples/Device.json)/[xml](Audit/Examples/Device.xml)) | [device-type-codes-snct-1](https://fhir.nhs.uk/ValueSet/device-type-codes-snct-1) | |
 | [Audit-Organization-1](https://fhir.nhs.uk/StructureDefinition/audit-organization-1) | Organisation ([json](Audit/Examples/Organization.json)/[xml](Audit/Examples/Organization.xml)) | | |
-| [Audit-Practitioner-1](https://fhir.nhs.uk/StructureDefinition/audit-practitioner-1) | Practitioner ([json](Audit/Examples/Practitioner.json)/[xml](Audit/Examples/Practitioner.xml)) | | |
+| [Audit-Practitioner-1](https://fhir.nhs.uk/StructureDefinition/audit-practitioner-1) | Practitioner ([json](Audit/Examples/Practitioner1a.json)/[xml](Audit/Examples/Practitioner1a.xml)) ([json](Audit/Examples/Practitioner1b.json)/[xml](Audit/Examples/Practitioner1b.xml)) | | |
 
