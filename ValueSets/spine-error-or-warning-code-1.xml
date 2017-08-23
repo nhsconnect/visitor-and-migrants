@@ -131,5 +131,13 @@
 			<code value="ASID_CHECK_FAILED"/>
 			<display value="The sender or receiver's ASID is not authorised for this interaction"/>
 		</concept>
+		<concept>
+			<code value="MISSING_OR_INVALID_HEADER"/>
+			<display value="There is a required header missing or invalid"/>
+		</concept>
+		<concept>
+			<code value="ACCESS_DENIED_SSL"/>
+			<display value="SSL Protocol or Cipher requirements not met"/>
+		</concept>
 	</codeSystem>
 </ValueSet>
