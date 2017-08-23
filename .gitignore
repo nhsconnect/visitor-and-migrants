@@ -5,5 +5,4 @@ _pdf
 .idea/
 .vscode/
 runSite.sh
-Gemfile.lock
 
