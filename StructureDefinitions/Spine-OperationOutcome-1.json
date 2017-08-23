@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-04-05T11:14:19.947+01:00",
+    "lastUpdated": "2017-08-23T11:14:19.947+01:00",
   },
   "url": "https://fhir.nhs.uk/StructureDefinition/spine-operationoutcome-1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "Spine-OperationOutcome-1",
   "display": "Spine-OperationOutcome-1",
-  "status": "draft",
+  "status": "active",
   "publisher": "NHS Digital",
   "contact": [
     {
