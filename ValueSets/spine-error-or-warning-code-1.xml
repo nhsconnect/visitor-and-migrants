@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
-		<lastUpdated value="2016-12-03T00:00:00+00:00"/>
+		<lastUpdated value="2017-08-23T00:00:00+00:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/spine-error-or-warning-code-1"/>
 	<version value="1.1.0"/>
 	<name value="Spine Error or Warning Code"/>
-	<status value="draft"/>
+	<status value="active"/>
 	<publisher value="NHS Digital"/>
 	<contact>
 		<name value="Interoperability Team"/>
