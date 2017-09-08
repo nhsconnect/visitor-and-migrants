@@ -9,7 +9,7 @@ summary: "Release notes for the Visitors and Migrants API Specification."
 
 Note - versions of this specification follow [semantic versioning](http://semver.org/) - minor and patch versions should be considered as non-breaking.
 
-#### 1.0.3-beta
+#### 1.0.3-beta (8th September 2017)
 
 - Updated links to error codes ValueSet to point to the updated minor version (1.1) with the latest set of Spine error codes
 - Updates to the [Cross Org Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) page to clarify use of unsigned tokens
