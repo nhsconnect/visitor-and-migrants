@@ -22,11 +22,20 @@ EEA
 EHIC
 : {{site.data.glossary.ehic}}
 
+FHIR
+: {{site.data.glossary.fhir}}
+
 HO
 : {{site.data.glossary.ho}}
 
 IHS
 : {{site.data.glossary.ihs}}
+
+JSON
+: {{site.data.glossary.json}}
+
+JWT
+: {{site.data.glossary.jwt}}
 
 NHSD
 : {{site.data.glossary.nhsd}}
@@ -51,3 +60,6 @@ SDS
 
 Spine
 : {{site.data.glossary.spine}}
+
+XML
+: {{site.data.glossary.xml}}
