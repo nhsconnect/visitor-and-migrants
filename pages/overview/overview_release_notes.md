@@ -12,6 +12,7 @@ Note - versions of this specification follow [semantic versioning](http://semver
 #### 1.0.3-beta
 
 - Updated links to error codes ValueSet to point to the updated minor version (1.1) with the latest set of Spine error codes
+- Updates to the [Cross Org Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) page to clarify use of unsigned tokens
 - Status of all V&M FHIR profiles updated to "active"
 - Added some terms in the glossary
 - Added this release notes page
