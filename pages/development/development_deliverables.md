@@ -7,9 +7,6 @@ permalink: development_deliverables.html
 summary: "Developer Cheat Sheet shortcuts for the <br/>technical build of Visitors and Migrants API."
 ---
 
-[TODO: Insert a picture here to show the overall process (e.g. TLS, Setting Audit headers, etc)]
-
-
 Visitors and Migrants Profiles:
 
 | Profile | Example | ValueSets | Sample Code |
