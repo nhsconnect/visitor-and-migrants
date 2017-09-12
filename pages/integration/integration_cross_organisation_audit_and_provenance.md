@@ -29,8 +29,8 @@ Consumer system SHALL generate a new JWT for each API request. The Payload secti
 | Claim | Priority | Description | Fixed Value | Dynamic Value | Specification / Example |
 |-------|----------|-------------|-------------|---------------|-------------------------|
 | iss | R | Client systems issuer URI | No | Yes | |
-| sub | R | ID for the user on whose behalf this request is being made. Matches `requesting_practitioner.identifier.value` | No | Yes | |
-| aud | R | Authorization server's `token_URL` | `https://authorize.fhir.nhs.uk/token` | No | |
+| sub | R | ID for the user on whose behalf this request is being made. Matches `requesting_practitioner .identifier.value` | No | Yes | |
+| aud | R | Authorization server's `token_URL` | `https://authorize .fhir.nhs.uk/token` | No | |
 | exp | R | Expiration time integer after which this authorization MUST be considered invalid. | `exp` | (now + 5 minutes) UTC time in seconds | |
 | iat | R | The UTC time the JWT was created by the requesting system | `iat` | now UTC time in seconds | |
 | reason_for_request | R | Purpose for which access is being requested | `directcare` | No | |
