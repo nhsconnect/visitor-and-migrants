@@ -1,7 +1,7 @@
 entries:
 - title: Visitors and Migrants
   product: Visitors and Migrants<br/>
-  version: 1.0.2-beta
+  version: 1.0.3-beta
   levels: one
   folders:
 
@@ -14,6 +14,9 @@ entries:
       type: homepage
     - title: Glossary
       url: /overview_glossary.html
+      output: web
+    - title: Release Notes
+      url: /overview_release_notes.html
       output: web
 
   - title: Design Approach
