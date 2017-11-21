@@ -6,7 +6,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="oo" />
   </extension>
-  <url value="http://StructureDefinition/stu3/Spine-VM-Observation-2" />
+  <url value="http://StructureDefinition/STU3/Spine-VM-Observation-2" />
   <version value="2.0.0" />
   <name value="Spine-VM-Observation-2" />
   <status value="draft" />

@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2017-09-14T16:37:21.829+01:00" />
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/STU3/audit-patient-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/audit-patient-1" />
   <name value="Audit-Patient-1" />
   <status value="draft" />
   <date value="2017-09-14T16:05:58.856+01:00" />

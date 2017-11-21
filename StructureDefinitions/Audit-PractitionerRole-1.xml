@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2017-09-15T11:20:18.451+01:00" />
   </meta>
-  <url value="https://fhir.nhs.uk/StructureDefinition/STU3/audit-practitionerrole-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/audit-practitionerrole-1" />
   <name value="Audit-PractitionerRole-1" />
   <status value="draft" />
   <date value="2017-09-15T10:53:02.969+01:00" />

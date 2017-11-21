@@ -1,15 +1,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="spine-vm-observation-component-2"/>
-   <meta>
-      <lastUpdated value="2016-12-03T00:00:00+00:00"/>
-   </meta>
    <text>
       <status value="generated"/>
    </text>
-   <url value="https://fhir.nhs.uk/ValueSet/spine-vm-observation-component-2"/>
+   <url value="https://fhir.nhs.uk/STU3/ValueSet/spine-vm-observation-component-2"/>
    <version value="1.0.0"/>
    <name value="Spine VM Observation Component"/>
    <status value="draft"/>
+   <date value="2017-11-11T00:00:00+00:00"/>
    <publisher value="NHS Digital"/>
    <contact>
       <name value="Interoperability Team"/>
@@ -20,7 +18,7 @@
       </telecom>
    </contact>
    <description value="Codes identifying the Visitors and Migrants observation component."/>
-   <copyright value="Copyright � 2016 Health and Social Care Information Centre"/>
+   <copyright value="Copyright 2016 Health and Social Care Information Centre"/>
    <codeSystem>
       <system value="https://fhir.nhs.uk/spine-vm-observation-component-2"/>
       <concept>
