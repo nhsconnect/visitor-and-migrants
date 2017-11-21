@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-15T11:46:21.852+01:00" />
+    <lastUpdated value="2017-11-21T11:59:39.237+00:00" />
   </meta>
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/audit-practitioner-1" />
   <version value="1.0.0" />
@@ -387,7 +387,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="type.coding.system" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -10887,7 +10887,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="type.coding.system" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>

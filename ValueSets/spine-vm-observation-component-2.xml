@@ -19,15 +19,17 @@
    </contact>
    <description value="Codes identifying the Visitors and Migrants observation component."/>
    <copyright value="Copyright 2016 Health and Social Care Information Centre"/>
-   <codeSystem>
-      <system value="https://fhir.nhs.uk/spine-vm-observation-component-2"/>
-      <concept>
-         <code value="BASIC_CHARGEABLE_STATUS"/>
-         <display value="Basic Chargeable Status"/>
-      </concept>
-      <concept>
-         <code value="CATEGORY_CHARGEABLE_STATUS"/>
-         <display value="Category Chargeable Status"/>
-      </concept>
-   </codeSystem>
+   <compose>
+      <include>
+         <system value="https://fhir.nhs.uk/spine-vm-observation-component-2"/>
+         <concept>
+            <code value="BASIC_CHARGEABLE_STATUS"/>
+            <display value="Basic Chargeable Status"/>
+         </concept>
+         <concept>
+            <code value="CATEGORY_CHARGEABLE_STATUS"/>
+            <display value="Category Chargeable Status"/>
+         </concept>
+      </include>
+   </compose>
 </ValueSet>

@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-09-15T11:20:18.451+01:00" />
+    <lastUpdated value="2017-11-21T11:59:58.941+00:00" />
   </meta>
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/audit-practitionerrole-1" />
+  <version value="1.0.0" />
   <name value="Audit-PractitionerRole-1" />
   <status value="draft" />
   <date value="2017-09-15T10:53:02.969+01:00" />
