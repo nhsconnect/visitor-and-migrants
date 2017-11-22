@@ -84,7 +84,7 @@ This section looks at the Visitors and Migrants profile API's covered within thi
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td><a href="https://github.com/nhsconnect/FHIR-SpineCore" target="_blank">The Spine-OperationOutcome resource is part of the FHIR-SpineCore pack</a></td>
+<td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/spine-operationoutcome-1" target="_blank">The Spine-OperationOutcome resource is part of the FHIR-SpineCore pack</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
