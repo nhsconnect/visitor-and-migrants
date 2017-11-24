@@ -43,7 +43,7 @@ GET [base]/Observation?subject:Patient.identifier=[system]|[value]&code=[system]
 
 - The `[system]` field for the Paient Itentifier SHALL be populated with the identifier system URL: `https://fhir.nhs.uk/Id/nhs-number`.
 - The `[system]` field for the Code SHALL be populated with the identifier system URL: `https://fhir.nhs.uk/fhir-observation-code-1`.
-- The `[code]` will be taken from the [fhir-observation-code-1 valueset](https://fhir-test.nhs.uk/ValueSet/fhir-observation-code-1) and for this API will always be 0001.
+- The `[code]` will be taken from the [fhir-observation-code-1 valueset](https://fhir.nhs.uk/ValueSet/fhir-observation-code-1) and for this API will always be 0001.
 - The `[base]` is the URL of the Spine endpoint. Note: Details of Spine endpoint addresses for test regions can be found on the [Assurance Support Portal](http://www.assurancesupport.digital.nhs.uk/)
 - Note: The mime-type can be specified to request either XML or JSON using another URL parameter `?_format=[mime-type]`, or a `Content-Type` HTTP header as per the [FHIR specification](https://www.hl7.org/fhir/http.html#mime-type).
 
@@ -167,7 +167,7 @@ Failure:
 |403|error|forbidden|ASID_CHECK_FAILED|The sender or receiver's ASID is not authorised for this interaction|
 
 
-- The error codes (including other Spine error codes that are outside the scope of this API) are defined in the [Spine Error or Warning Code ValueSet](/ValueSets/spine-error-or-warning-code-1.xml)
+- The error codes (including other Spine error codes that are outside the scope of this API) are defined in the [Spine Error or Warning Code ValueSet](https://fhir.nhs.uk/ValueSet/spine-error-or-warning-code-1)
 - Error REQUEST_UNMATCHED would occur if the NHS number being requested in the search request does not match the requested_record value in the JWT - see [Cross Organisation Audit and Provenance](integration_cross_organisation_audit_and_provenance.html) for details.
 
 ```json
