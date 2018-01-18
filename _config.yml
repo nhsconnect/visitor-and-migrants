@@ -123,7 +123,7 @@ site:
     patient: "[Patient](http://www.interopen.org/candidate-profiles/care-connect/CareConnect-Patient-1.html)"
 
 
-gems:
+plugins:
    - jekyll-github-metadata
    - jekyll-mentions
    - jemoji
